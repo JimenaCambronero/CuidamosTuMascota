@@ -1,0 +1,235 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- movimientos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- enlace bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./sass/style.css">
+    <!-- estilo letras -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Roboto+Condensed:wght@300;700&family=Roboto:wght@100;300;400;500;900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <title>Cuidamos a Tu Mascota</title>
+</head>
+<body>
+<header>
+<!-- estilo MENU --> 
+    <input type="checkbox" id="btn-menu">
+        <label for="btn-menu"><i class="fas fa-bars fa-2x"></i></label>
+            <nav class="menu" id="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="">Sobre Nosotros</a></li>
+                    <li><a href="">Testimonios</a></li>
+                    <li><a href="">Servicios</a></li>
+                    <li><a href="">Contacto</a></li>
+                    <li><a href="">Registro</a></li>
+                </ul>
+            </nav>
+</header>
+<main>
+    <div class="contenedor">
+        <img  data-aos="flip-left" src="./imagenes/sabriymauro.png" alt="sabrina y mauro">
+        <div class="contenedor-info">
+            <h1 class="titulo-home">Cuidamos a tu Mascota</h1>
+            <h2 class="subtitulo">Somos <span>Sabrina</span> y <span>Mauro</span>. </h2>
+            <p class="presentacion">Les damos la bienvenida a nuestra página web. ¿Necesitas que durante un tiempo cuidemos de tu mascota o no puedes encargarte de sus cuidados? Lo hacemos por vos y te ayudamos en todo lo que necesites, tambien ofrecemos paseos y visitas a domicilio. </p> 
+        <div class="botones">
+        </div>
+            <button class="btn-contratar" id="contratar">Contratar Servicio</button>
+            <button class="btn-consultar" id="consultar">Presupuesto Rapido</button>
+        </div>
+    </div>
+    <div class="contenedor-estadia">
+      
+      <h3 class="reservar-estadia">Reserva una Estadía con nosotros</h3>
+      <p class="intro-reservas">Queremos que las mascotas sean felices y estén cuidadas con el mismo cariño que en sus casas.
+        En Cuidamos a tu Mascota vas a encontrar a una segunda familia para ellos.
+        Anhelamos que sus dueños estén tranquilos en su ausencia, sabiendo que su mascota será muy bien atendida y cuidada.
+        Les proporcionaremos todas las atenciones que nuestros amiguitos peludos necesiten y sus dueños estará al tanto de todo lo que suceda durante su estadía.  
+        Estas también son vacaciones para tu mascota!💘 
+        Atenderemos a cada uno de forma individual, según su carácter y necesidades con mucho amor y juegos.
+        Los esperamos!!  </p>
+      <div>
+        
+        <button>Saber Más</button>
+      </div>
+    </div>
+
+    <section class="testimonios">
+      <div class="intro-testimonios">
+        <h3 class="titulo-testimonios">Querés saber que piensan de <span>"Cuidamos a tu Mascota"</span>...</h3>
+        <p class="parrafo-testimonios">Acá vas a poder leer algunas de las opiniones que hemos ido recibiendo a lo largo de este tiempo que llevamos cuidando mascotas, lo hacemos con mucho amor, cada una de ellas es cuidada y mimada como si fuesen propias.</p>
+      </div>   
+        <div class="container-testimonios">
+          <div class="row col-12">
+          <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <div class="w-100">
+                <div class="row align-items-center justify-content-center">
+                  <div class="col-8 col-md-3 order-md-1">
+                    <img class="img-fluid mb-5 mb-md-0" src="./imagenes/mascotas/1bongo-min (1).jpg" alt="imagen perro 1">
+                  </div>
+                  <div class="col-md-7 order-md-0">
+                    <figure class="mx-auto mb-0" style="max-width: 500px;">
+                      <blockquote class="blockquote mb-0">
+                        <p class="testimonio mb-5"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore ut omnis dolores. Accusamus, quas. Tempore expedita, tenetur voluptatibus sapiente saepe esse assumenda eos recusandae officia voluptatem eveniet itaque modi quis?</p>
+                      </blockquote>
+                      <figcaption class="blockquote-footer text-xs mb-0"> Pedro Perez. Madrid</figcaption>
+                    </figure>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <div class="w-100">
+                <div class="row align-items-center justify-content-center">
+                  <div class="col-8 col-md-3 order-md-1">
+                    <img class="img-fluid mb-5 mb-md-0" src="./imagenes/mascotas/2lingofrances-min.jpg" alt="imagen perro 2">
+                  </div>
+                  <div class="col-md-7 order-md-0">
+                    <figure class="mx-auto mb-0" style="max-width: 500px;">
+                      <blockquote class="blockquote mb-0">
+                        <p class="testimonio mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quidem voluptatum voluptates minus dignissimos. Aliquid voluptas voluptatibus rem molestiae recusandae odio? Cumque saepe incidunt sequi. Ipsam magnam dolore accusamus voluptatum!</p>
+                      </blockquote>
+                      <figcaption class="blockquote-footer text-xs mb-0"> sJuan Perez. Madrid</figcaption>
+                    </figure>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="w-100">
+                <div class="row align-items-center justify-content-center">
+                  <div class="col-8 col-md-3 order-md-1">
+                    <img class="img-fluid mb-5 mb-md-0" src="./imagenes/mascotas/3nilogato-min.jpg" alt="imagen gato 3">
+                  </div>
+                  <div class="col-md-7 order-md-0">
+                    <figure class="mx-auto mb-0" style="max-width: 500px;">
+                      <blockquote class="blockquote mb-0">
+                        <p class="testimonio mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia dolorum iusto ea reiciendis nobis molestiae quam, aliquid eos deleniti, fuga sapiente! Fugit quisquam corporis, tempora repellat voluptate maiores laboriosam doloremque!</p>
+                      </blockquote>
+                      <figcaption class="blockquote-footer text-xs mb-0"> Juan Perez. Madrid</figcaption>
+                    </figure>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="w-100">
+                <div class="row align-items-center justify-content-center">
+                  <div class="col-8 col-md-3 order-md-1">
+                    <img class="img-fluid mb-5 mb-md-0" src="./imagenes/mascotas/4tim-min.jpg" alt="imagen perro 4">
+                  </div>
+                  <div class="col-md-7 order-md-0">
+                    <figure class="mx-auto mb-0" style="max-width: 500px;">
+                      <blockquote class="blockquote mb-0">
+                        <p class="testimonio mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit quibusdam ipsum ullam, commodi magnam, fugiat eaque voluptates quos illo a quasi recusandae reiciendis obcaecati accusamus nam sunt itaque! Itaque, omnis.</p>
+                      </blockquote>
+                      <figcaption class="blockquote-footer text-xs mb-0"> Juan Perez. Madrid</figcaption>
+                    </figure>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <div class="carousel-item">
+            <div class="w-100">
+              <div class="row align-items-center justify-content-center">
+                <div class="col-8 col-md-3 order-md-1">
+                  <img class="img-fluid mb-5 mb-md-0" src="./imagenes/mascotas/5simonperro-min.jpg" alt="imagen perro 5">
+                </div>
+                <div class="col-md-7 order-md-0">
+                  <figure class="mx-auto mb-0" style="max-width: 500px;">
+                    <blockquote class="blockquote mb-0">
+                      <p class="testimonio mb-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus consequatur atque possimus sequi, necessitatibus reprehenderit excepturi pariatur dolorum non, magni vel dignissimos ratione cupiditate deleniti perspiciatis id quo perferendis voluptatem.</p>
+                    </blockquote>
+                    <figcaption class="blockquote-footer text-xs mb-0"> Juan Perez. Madrid</figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="w-100">
+              <div class="row align-items-center justify-content-center">
+                <div class="col-8 col-md-3 order-md-1">
+                  <img class="img-fluid mb-5 mb-md-0" src="./imagenes/mascotas/6moralabrador-min.jpg" alt="imagen alumno 4">
+                </div>
+                <div class="col-md-7 order-md-0">
+                  <figure class="mx-auto mb-0" style="max-width: 500px;">
+                    <blockquote class="blockquote mb-0">
+                      <p class="testimonio mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae modi eligendi totam molestias, veritatis velit officiis, corporis error cum nesciunt deserunt aliquam illo alias animi exercitationem ipsum ut id perspiciatis.</p>
+                    </blockquote>
+                    <figcaption class="blockquote-footer text-xs mb-0"> Juan Perez. Madrid</figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </div>
+  </section>
+  <section class="contenedor-servicios">
+    <h3 class="titulo-servicios">Servicios que ofrecemos.</h3>
+    <h4 class="subtitulo-servicios">En esta sección vas a encontrar los servicios que ofrece <span>Cuidamos a tu Mascota</span> tambien podes comunicarte con nosotros en caso de que requieras alguno en especial y que no se encuentre disponible en la página</h4>
+
+    <div class="servicios">
+      <div class="servicio">
+        <img src="./imagenes/servicios/chat.png" alt="chat">
+          <p class="descripcion">Comunicación constante</p>  
+        <img src="./imagenes/servicios/house.png" alt="hospedaje">
+          <p class="descripcion">Alojamiento</p>        
+      </div>
+      <div class="servicio">  
+        <img src="./imagenes/servicios/comida.png" alt="alimento">
+          <p class="descripcion">Alimento</p>
+        <img src="./imagenes/servicios/parque.png" alt="paseo">
+          <p class="descripcion">Paseo</p>
+        
+      </div>
+    </div>
+      <div class="servicio">
+        <button class="boton-saber" id="boton-saber"> Saber más</button>
+          <p class="contenido-saber" id="contenido-saber">Aqui vas a encontrar la descripcion de cada servicio</p>
+      </div>
+    
+  </section>
+</main>
+
+<footer>
+    <div class="copyright">
+        <p>© 2021 CUIDAMOS TU MASCOTA. Todos los derechos reservados.<span>Desarrollado con <span class="heart">💜</span> por Jimena G. Cambronero.</span></p>
+        <div class="footer-social">
+            <a href="https://github.com/JimenaCambronero"><i class="fab fa-github"></i></i></a>
+            <a href="hhttps://www.linkedin.com/in/jimena-gisele-cambronero/"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </div>
+</footer>  
+<script src="./codigo.js"></script> 
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>

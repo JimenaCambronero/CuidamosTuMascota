@@ -1,0 +1,140 @@
+
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+}
+
+/* ------------estilo MENU -------------- */
+header{
+    width: 100%;        
+}
+
+#btn-menu{
+    display:none;
+}
+
+header label{
+    display: none;
+    width: 40px;
+    height: 42px;
+    padding: 10px;
+    // border-right: 1px solid rgb(0, 0, 0);
+}
+
+header label .fa-2x:hover{
+    cursor: pointer;
+    background-color: rgba(230, 212, 134, 0.479);
+}
+
+.menu ul {
+    width: 100%;
+    padding: 2em 0em 1em;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.menu ul li {
+    display: inline-block;
+    text-align: center;
+}
+
+.menu ul li a {
+    display: block;
+    color:grey;
+    font-size: 1.3em ;
+    padding: 0.5em 1rem;
+    text-decoration: none;
+    transition: all 0.4s linear;
+    border-radius: 5px;
+    }
+
+.menu ul li a:hover {
+    color: rgb(112, 187, 112);
+    background: rgb(116, 115, 115);
+}
+
+
+// ------responsive--------
+
+@media (max-width:1024px){
+    .menu ul li a {
+        font-size: 1em ;
+    }
+}
+
+@media (max-width:768px) {
+    header label { 
+        display: block; 
+    }
+    .menu {
+        position: absolute;
+        background: rgb(201, 196, 196);
+        width: 50%;
+        height: 100vh;
+        z-index: 1;
+        margin-left: -50%;
+        transition: all 0.5s;
+    }
+
+    .menu ul{
+        flex-direction: column;
+        padding: 0;
+
+    }
+    .menu li {
+        border-top: 1px solid black;
+    }
+    
+    .menu ul li a{
+        color:rgb(122, 122, 122);
+        font-size: 1em ;
+    }
+
+    #btn-menu:checked ~ .menu{
+        margin: 0;
+    }
+}
+
+
+@media (max-width:375px) {
+    header label { 
+        display: block; 
+    }
+    .menu {
+        position: absolute;
+        background: rgb(240, 239, 239);
+        width: 50%;
+        height: 100vh;
+        min-height: 230px;
+        z-index: 1;
+    }
+
+    .menu ul{
+        flex-direction: column;
+        padding: 0;
+
+    }
+    .menu li {
+        border-top: 1px solid rgb(233, 233, 233);
+    }
+    
+    .menu ul li a{
+        color:white;
+        font-size: 0.6em ;
+    }
+
+    #btn-menu:checked ~ .menu{
+        margin: 0;
+    }
+}
+
+

@@ -1,0 +1,60 @@
+.contenedor-servicios{
+    background-color: $color-celeste;
+    padding: 3em 7em;
+}
+
+.titulo-servicios{
+    font-family: 'Amatic SC', cursive;
+    font-size: 2.5em;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;  
+    text-align: center;
+}
+
+.subtitulo-servicios{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+    letter-spacing: 0.1em;
+    font-weight: normal;
+    margin-top: 1.5em;
+        span{
+            font-family: 'Amatic SC', cursive;
+            color: rgb(153, 192, 74);
+            text-transform: uppercase;
+        }
+    }
+
+.servicios{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.5em;
+    margin: 3em 3em 0;
+}
+
+.servicio{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5em;
+    align-items: center;
+}
+
+.descripcion{
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.5em;
+    letter-spacing: 0.1em;
+    margin: 1em;
+}
+
+.boton-saber{
+    border-radius: 23px;
+    font-size: 0.8em;
+    padding: 0.5em 2em;
+}
+.contenido-saber{
+    font-size: 0.5em;
+    letter-spacing: 0.1em;
+    margin-top: 0.8em;  
+    display: none;
+}
+
+

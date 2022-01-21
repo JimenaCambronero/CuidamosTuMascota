@@ -1,0 +1,27 @@
+// font-family: 'Roboto', sans-serif;
+// font-family: 'Roboto Condensed', sans-serif;
+
+$color-cemento: #d3ccc5;
+$color-rosa: #dca3ab;
+$color-naranja: #c68c64; 
+$color-naranjalight: #e7b69d;
+$color-celeste:#b5d7dc; 
+$color-verde: #a4ac94; 
+
+
+@mixin mix ($font-size, $letter-spacing){
+    font-size: $font-size;
+    letter-spacing: $letter-spacing;
+}
+
+@import "menu";
+@import "banner";
+@import "sobrenosotros";
+@import "testimonios";
+@import "reservarestadia";
+@import "servicios";
+
+
+
+
+

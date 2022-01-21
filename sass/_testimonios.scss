@@ -1,0 +1,40 @@
+.testimonios{
+    background-color: $color-naranjalight;
+    padding-bottom: 3em;
+}
+
+.intro-testimonios{
+    padding: 1em 7em;    
+}
+
+.titulo-testimonios {
+    font-family: 'Amatic SC', cursive;
+    @include mix (2.5em, 0.1em);
+    text-align: center;
+    padding: 1em;
+    margin-bottom: 0px;
+        span{
+            font-size: 1em;
+            color: rgb(153, 192, 74);
+        }
+}
+
+.parrafo-testimonios{ font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+    letter-spacing: 0.1em;
+    font-weight: normal;
+}
+
+.container-testimonios{
+    background-color: $color-cemento;
+}
+
+.testimonio{
+    font-family: 'Roboto Condensed', sans-serif;
+    @include mix (1em, 0.1em);
+    font-style: oblique;    
+}
+
+.blockquote-footer{
+    color: $color-verde;     
+}

@@ -1,0 +1,66 @@
+
+.contenedor{
+    background-image: url(../imagenes/banner2.png);
+    background-size: cover;
+    flex-direction: row;
+    justify-content: space-evenly;
+    display: flex;
+    align-items: center;
+    padding: 5em;
+}
+
+.contenedor img{
+    height: 400px;
+    margin: 2em;
+}
+
+.contenedor-info {
+    text-align: center;
+    color: black;
+}
+
+.titulo-home{
+    font-family: 'Amatic SC', cursive;
+    @include mix (3.5em, 0.1em);
+    margin-top: 2em;
+    text-transform: uppercase;   
+}
+
+.subtitulo {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    margin-bottom: 2em;
+    font-weight: normal;
+}
+
+.presentacion{
+    @include mix (1em, 0.1em);
+    margin: 1em 3em;
+    span{
+        font-size: 1.3em;
+        color: rgb(153, 192, 74);
+        text-transform: uppercase;
+    }
+}
+
+
+.btn-contratar, .btn-consultar {
+    background-color: $color-celeste;
+    cursor: pointer;
+    color: rgb(12, 11, 11);
+    box-shadow: 0px 5px 20px -10px #d3ccc5;
+    padding: 1em 2em;
+    font-size: 1.2em;
+    border-radius: 2em;
+    border: none;
+}
+
+button:hover {
+    box-shadow: none;
+}
+
+.btn-consultar {
+    background: none;
+    border: 1px solid white;
+    margin: 2em;
+}

@@ -1,0 +1,22 @@
+
+
+.contenedor-sobreNosotros{
+    display: flex;
+    align-items: center;
+    margin: 5em;
+}
+
+.sobreNosotros {
+    @include mix (3em, 0.1em);
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1em;
+    background: $color-rosa;
+    border-radius: 0px 121px 94px 117px;
+}
+
+.sobreNosotros-texto {
+    @include mix (1em, 0.1em);
+    margin: 2em;    
+}
+
