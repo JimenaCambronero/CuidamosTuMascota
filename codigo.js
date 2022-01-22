@@ -66,12 +66,28 @@ let delay = h1.innerHTML.length * speed + speed;
 
 typeEffect(h1, speed);
 
-// * codigo de ver más de servicios ------------------------------------
-let saber = document.getElementById("boton-saber")
-saber.addEventListener("click", respuestaClick)
+// agregar texto con JavaScript en el banner
+
+let parrafo = document.createElement('p');
+parrafo.setAttribute ("class", "parrafo-testimonios");
+parrafo.innerHTML = "Acá vas a poder leer algunas de las opiniones que hemos ido recibiendo a lo largo de este tiempo que llevamos cuidando mascotas, lo hacemos con mucho amor, cada una de ellas es cuidada y mimada como si fuesen propias."
+console.log(parrafo);
+
+let $introTestimonios = document.getElementById("intro-testimonios");
+$introTestimonios.append(parrafo);
+
+
+
+// boton se servicios
+let botonSaber = document.getElementById("boton-saber")
+botonSaber.addEventListener ("click", respuestaClick)
 
 function respuestaClick(){
-    document.getElementById("contenido-saber").style.display = 'block';
+   if (document.getElementById ("contenido-saber").style.display == "block"){ 
+    document.getElementById ("contenido-saber").style.display = "none";
+    document.getElementById ("boton-saber").innerHTML = "Saber Más";
+  }else{
+    document.getElementById ("contenido-saber").style.display = "block";
+    document.getElementById ("boton-saber").innerHTML = "Ocultar";
+  }
 }
-
-

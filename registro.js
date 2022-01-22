@@ -19,7 +19,7 @@ document.addEventListener('click', e => {
     }
     localStorage.setItem("formData", JSON.stringify(formData));
     dispData();
-    e.preventDefaul()
+    e.preventDefault();
 })
 
 function dispData(){
@@ -30,7 +30,3 @@ function dispData(){
 }
 dispData();
 console.log();
-
-
-
-

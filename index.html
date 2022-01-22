@@ -27,47 +27,47 @@
             <nav class="menu" id="menu">
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="">Sobre Nosotros</a></li>
-                    <li><a href="">Testimonios</a></li>
-                    <li><a href="">Servicios</a></li>
-                    <li><a href="">Contacto</a></li>
-                    <li><a href="">Registro</a></li>
+                    <li><a href="#sobrenosotros">Sobre Nosotros</a></li>
+                    <li><a href="#reservas">Reservas</a></li>
+                    <li><a href="#testimonios">Testimonios</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="registro.html#registro">Registro</a></li>
                 </ul>
             </nav>
 </header>
 <main>
-    <div class="contenedor">
+    <div class="contenedor" id="sobrenosotros">
         <img  data-aos="flip-left" src="./imagenes/sabriymauro.png" alt="sabrina y mauro">
-        <div class="contenedor-info">
+        <div class="contenedor-info" id="contenedor-info">
             <h1 class="titulo-home">Cuidamos a tu Mascota</h1>
             <h2 class="subtitulo">Somos <span>Sabrina</span> y <span>Mauro</span>. </h2>
             <p class="presentacion">Les damos la bienvenida a nuestra página web. ¿Necesitas que durante un tiempo cuidemos de tu mascota o no puedes encargarte de sus cuidados? Lo hacemos por vos y te ayudamos en todo lo que necesites, tambien ofrecemos paseos y visitas a domicilio. </p> 
+      
         <div class="botones">
-        </div>
             <button class="btn-contratar" id="contratar">Contratar Servicio</button>
             <button class="btn-consultar" id="consultar">Presupuesto Rapido</button>
         </div>
+      </div>
     </div>
-    <div class="contenedor-estadia">
-      
+  <!-- Estadia -->
+    <div class="contenedor-estadia" id="reservas">
       <h3 class="reservar-estadia">Reserva una Estadía con nosotros</h3>
-      <p class="intro-reservas">Queremos que las mascotas sean felices y estén cuidadas con el mismo cariño que en sus casas.
+        <p class="intro-reservas">Queremos que las mascotas sean felices y estén cuidadas con el mismo cariño que en sus casas.
         En Cuidamos a tu Mascota vas a encontrar a una segunda familia para ellos.
         Anhelamos que sus dueños estén tranquilos en su ausencia, sabiendo que su mascota será muy bien atendida y cuidada.
         Les proporcionaremos todas las atenciones que nuestros amiguitos peludos necesiten y sus dueños estará al tanto de todo lo que suceda durante su estadía.  
         Estas también son vacaciones para tu mascota!💘 
         Atenderemos a cada uno de forma individual, según su carácter y necesidades con mucho amor y juegos.
         Los esperamos!!  </p>
-      <div>
-        
+      <div> 
         <button>Saber Más</button>
       </div>
     </div>
-
-    <section class="testimonios">
-      <div class="intro-testimonios">
+<!-- testimonios -->
+    <section class="testimonios" id="testimonios"> 
+      <div class="intro-testimonios" id="intro-testimonios">
         <h3 class="titulo-testimonios">Querés saber que piensan de <span>"Cuidamos a tu Mascota"</span>...</h3>
-        <p class="parrafo-testimonios">Acá vas a poder leer algunas de las opiniones que hemos ido recibiendo a lo largo de este tiempo que llevamos cuidando mascotas, lo hacemos con mucho amor, cada una de ellas es cuidada y mimada como si fuesen propias.</p>
+        <!-- se agrega texto con JS -->
       </div>   
         <div class="container-testimonios">
           <div class="row col-12">
@@ -188,33 +188,32 @@
     </div>
   </div>
   </section>
-  <section class="contenedor-servicios">
+  <!-- servicios -->
+  <section class="contenedor-servicios" id="servicios">
     <h3 class="titulo-servicios">Servicios que ofrecemos.</h3>
     <h4 class="subtitulo-servicios">En esta sección vas a encontrar los servicios que ofrece <span>Cuidamos a tu Mascota</span> tambien podes comunicarte con nosotros en caso de que requieras alguno en especial y que no se encuentre disponible en la página</h4>
 
     <div class="servicios">
       <div class="servicio">
-        <img src="./imagenes/servicios/chat.png" alt="chat">
-          <p class="descripcion">Comunicación constante</p>  
         <img src="./imagenes/servicios/house.png" alt="hospedaje">
-          <p class="descripcion">Alojamiento</p>        
+          <p class="descripcion">Alojamiento</p>  
+        <img src="./imagenes/servicios/parque.png" alt="paseo">
+          <p class="descripcion">Paseo</p> 
       </div>
       <div class="servicio">  
         <img src="./imagenes/servicios/comida.png" alt="alimento">
           <p class="descripcion">Alimento</p>
-        <img src="./imagenes/servicios/parque.png" alt="paseo">
-          <p class="descripcion">Paseo</p>
-        
+          <img src="./imagenes/servicios/chat.png" alt="chat">
+          <p class="descripcion">Comunicación constante</p>        
       </div>
     </div>
       <div class="servicio">
         <button class="boton-saber" id="boton-saber"> Saber más</button>
-          <p class="contenido-saber" id="contenido-saber">Aqui vas a encontrar la descripcion de cada servicio</p>
-      </div>
-    
+          <p class="contenido-saber" id="contenido-saber">Aqui vas a encontrar la descripcion de cada uno de los servicio que se ven ofrecidos previamente</p>
+      </div> 
   </section>
 </main>
-
+<!-- footer -->
 <footer>
     <div class="copyright">
         <p>© 2021 CUIDAMOS TU MASCOTA. Todos los derechos reservados.<span>Desarrollado con <span class="heart">💜</span> por Jimena G. Cambronero.</span></p>
@@ -223,7 +222,10 @@
             <a href="hhttps://www.linkedin.com/in/jimena-gisele-cambronero/"><i class="fab fa-linkedin-in"></i></a>
         </div>
     </div>
-</footer>  
+</footer> 
+ 
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script src="./codigo.js"></script> 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>

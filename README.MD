@@ -1,4 +1,4 @@
-# Cuidamos a tu Macsota.
+# Cuidamos a tu Mascota.
 =======
 ##### Página Web pen construcción para el curso de JavaScript dictado por @CoderHouse 🖥.
 
