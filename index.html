@@ -31,11 +31,72 @@
                     <li><a href="#reservas">Reservas</a></li>
                     <li><a href="#testimonios">Testimonios</a></li>
                     <li><a href="#servicios">Servicios</a></li>
-                    <li><a href="registro.html#registro">Registro</a></li>
+                    <li><a href="#">Registro</a></li>
                 </ul>
             </nav>
 </header>
 <main>
+  <div class="ventana" id="ventana">
+    <div class="container-formulario" >
+        <div class="container-form sign-up" id="registro">
+            <div class="welcome-back">
+                <div class="message">
+                    <h2>Bienvenido a Cuidamos a tu Mascota</h2>
+                    <p>Si ya tienes una cuenta por favor inicia sesion aqui</p>
+                    <button class="sign-up-btn">Iniciar Sesion</button>
+                </div>
+            </div>
+            <form class="formulario">
+                <h2 class="message">Crear una cuenta</h2>
+                <div class="iconos">
+                    <div class="border-icon">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <div class="border-icon">
+                        <i class="fas fa-envelope-open"></i>
+                    </div>
+                    <div class="border-icon">
+                        <i class="fab fa-facebook-square"></i>
+                    </div>
+                </div>
+                <p class="cuenta-gratis">Crear una cuenta gratis</p>
+                <input type="text" id="nombre" placeholder="Nombre">
+                <input type="email" id="email" placeholder="Email">
+                <input type="password" id="contraseña"placeholder="Contraseña">
+                <input type="button" id="boton-registrarse" value="Registrarse">
+            </form>
+        </div>
+
+
+        <div class="container-form sign-in">
+            <form class="formulario">
+                <h2 class="create-account">Iniciar Sesion</h2>
+                <div class="iconos">
+                    <div class="border-icon">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <div class="border-icon">
+                        <i class="fas fa-envelope-open"></i>
+                    </div>
+                    <div class="border-icon">
+                        <i class="fab fa-facebook-square"></i>
+                    </div>
+                </div>
+                <p class="cuenta-gratis">¿Aun no tienes una cuenta?</p>
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Contraseña">
+                <input type="button" value="Iniciar Sesion">
+            </form>
+            <div class="welcome-back">
+                <div class="message">
+                    <h2>Bienvenido de nuevo a Cuidamos a Tu Mascota</h2>
+                    <p>Si aun no tienes una cuenta por favor registrese aqui</p>
+                    <button class="sign-in-btn">Registrarse</button>
+                </div>
+            </div>
+        </div>
+    </div> 
+  </div>
     <div class="contenedor" id="sobrenosotros">
         <img  data-aos="flip-left" src="./imagenes/sabriymauro.png" alt="sabrina y mauro">
         <div class="contenedor-info" id="contenedor-info">
@@ -51,16 +112,11 @@
     </div>
   <!-- Estadia -->
     <div class="contenedor-estadia" id="reservas">
-      <h3 class="reservar-estadia">Reserva una Estadía con nosotros</h3>
-        <p class="intro-reservas">Queremos que las mascotas sean felices y estén cuidadas con el mismo cariño que en sus casas.
-        En Cuidamos a tu Mascota vas a encontrar a una segunda familia para ellos.
-        Anhelamos que sus dueños estén tranquilos en su ausencia, sabiendo que su mascota será muy bien atendida y cuidada.
-        Les proporcionaremos todas las atenciones que nuestros amiguitos peludos necesiten y sus dueños estará al tanto de todo lo que suceda durante su estadía.  
-        Estas también son vacaciones para tu mascota!💘 
-        Atenderemos a cada uno de forma individual, según su carácter y necesidades con mucho amor y juegos.
-        Los esperamos!!  </p>
-      <div> 
-        <button>Saber Más</button>
+      <h3 class="reservar-estadia" id="reservar-estadia">Reserva una Estadía con nosotros</h3>
+      <div id="intro-reservas"> 
+        <!-- se agrega texto con JS -->
+      </div>
+        <button id="button">Saber Más</button>
       </div>
     </div>
 <!-- testimonios -->
@@ -226,6 +282,7 @@
  
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
 <script src="./codigo.js"></script> 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>

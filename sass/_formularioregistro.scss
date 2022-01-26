@@ -1,7 +1,5 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.ventana{
+    display: none;
 }
 
 .container-formulario {
@@ -13,8 +11,6 @@
 }
 
 .container-form {
-    width: 80%;
-    height: 90vh;
     display: flex;
     justify-content: space-around;
     transition: all .5s ease-out;

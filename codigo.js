@@ -43,7 +43,53 @@
 //   }
 // }
 
- // titulo movimiento escritura ---------------------------------------
+// Apertura de ventana para logueo
+
+function abrirVentana () { 
+document.getElementById('ventana').style.display = "block";
+}
+function cerrarVentana(){
+  document.getElementById('ventana').style.display = "none";
+}
+
+ // Formulario de Registro---------------------------------------
+
+
+const $btnSignIn = document.querySelector ('.sign-in-btn'),
+    $btnSignUp = document.querySelector ('.sign-up-btn'),
+    $signUp = document.querySelector ('.sign-up'),
+    $signIn = document.querySelector('.sign-in'),
+    $registrarse = document.getElementById ('boton-registrarse');
+
+document.addEventListener('click', e => {
+  if (e.target === $btnSignIn || e.target === $btnSignUp){
+      $signIn.classList.toggle('active');
+      $signUp.classList.toggle ('active');
+  }
+});
+
+document.addEventListener('click', e => {
+  let formData = {
+      nombre: document.getElementById('nombre').value,
+      email: document.getElementById ('email').value,
+      contraseña: document.getElementById ('contraseña').value,
+  }
+  localStorage.setItem("formData", JSON.stringify(formData));
+  dispData();
+  e.preventDefault();
+})
+
+function dispData(){
+  console.log (JSON.parse(localStorage.getItem("formData")));
+  if(localStorage.getItem("formData")){
+      let {nombre, email, contraseña} = JSON.parse(localStorage.getItem("formData"));
+  }
+}
+dispData();
+console.log();
+
+
+// Funcion animacion de Titulo
 
 function typeEffect(element, speed) {
   let text = element.innerHTML;
@@ -70,15 +116,24 @@ typeEffect(h1, speed);
 
 let parrafo = document.createElement('p');
 parrafo.setAttribute ("class", "parrafo-testimonios");
-parrafo.innerHTML = "Acá vas a poder leer algunas de las opiniones que hemos ido recibiendo a lo largo de este tiempo que llevamos cuidando mascotas, lo hacemos con mucho amor, cada una de ellas es cuidada y mimada como si fuesen propias."
-console.log(parrafo);
+parrafo.innerText = "Acá vas a poder leer algunas de las opiniones que hemos ido recibiendo a lo largo de este tiempo que llevamos cuidando mascotas, lo hacemos con mucho amor, cada una de ellas es cuidada y mimada como si fuesen propias."
+// console.log(parrafo);
 
 let $introTestimonios = document.getElementById("intro-testimonios");
 $introTestimonios.append(parrafo);
 
+// agregar texto con JavaScrip con Reserva de estadias.
 
+let introReservas = document.createElement ('p');
+introReservas.setAttribute ('class', "intro-reservas");
+introReservas.innerHTML = "Queremos que las mascotas sean felices y estén cuidadas con el mismo cariño que en sus casas. En Cuidamos a tu Mascota vas a encontrar a una segunda familia para ellos. Anhelamos que sus dueños estén tranquilos en su ausencia, sabiendo que su mascota será muy bien atendida y cuidada. Les proporcionaremos todas las atenciones que nuestros amiguitos peludos necesiten y sus dueños estará al tanto de todo lo que suceda durante su estadía. Estas también son vacaciones para tu mascota!💘 Atenderemos a cada uno de forma individual, según su carácter y necesidades con mucho amor y juegos. Los esperamos!! " 
+
+let $contenedorEstadia = document.getElementById ("intro-reservas");
+$contenedorEstadia.append(introReservas);
+// console.log (introReservas);
 
 // boton se servicios
+
 let botonSaber = document.getElementById("boton-saber")
 botonSaber.addEventListener ("click", respuestaClick)
 
