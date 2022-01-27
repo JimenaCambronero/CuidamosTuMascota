@@ -1,92 +1,99 @@
-// const boton = document.getElementById ("consultar");
+const boton = document.getElementById ("consultar");
 
-// boton.addEventListener ('click', promptMensaje);
+boton.addEventListener ('click', promptMensaje);
 
-// let precioDiario1 = 15;
-// let precioDiario2 = 13;
-// let nombre = "";
-// let edad = "";
-// let mascota = "";
+let precioDiario1 = 15;
+let precioDiario2 = 13;
+let nombre = "";
+let edad = "";
+let mascota = "";
 
 
-// function promptMensaje(){ 
+function promptMensaje(){ 
 
-// nombre = prompt ("Hola! Ingresa tu nombre aquí!");
-// alert ("Bienvenida/o " + " " + nombre);
+nombre = prompt ("Hola! Ingresa tu nombre aquí!");
+alert ("Bienvenida/o " + " " + nombre);
 
-// alert ("Gracias por visitarnos, ahora te haremos unas preguntas ...!");
+alert ("Gracias por visitarnos, ahora te haremos unas preguntas ...!");
 
-// edad = parseInt (prompt ("Ingresa tu edad por favor"));
+edad = parseInt (prompt ("Ingresa tu edad por favor"));
 
-//   if (edad >=18) {
-//     alert (" Puedes ingresar a nuestro sitio y realizar una reserva " + nombre); 
+  if (edad >=18) {
+    alert (" Puedes ingresar a nuestro sitio y realizar una reserva " + nombre); 
 
-// cantidadMascotas = parseInt (prompt ("Ingresa cuantas mascotas quieres que cuidemos!"));
-//   if (cantidadMascotas >=1 && cantidadMascotas <=3){
-//   alert ("Podemos cuidar a tu/s mascota/s");
-//   }
+cantidadMascotas = parseInt (prompt ("Ingresa cuantas mascotas quieres que cuidemos!"));
+  if (cantidadMascotas >=1 && cantidadMascotas <=3){
+  alert ("Podemos cuidar a tu/s mascota/s");
+  }
 
-// mascota = prompt ("Indicanos si tu mascota es perro o gato");
-//   if (mascota === "perro"){
-//   alert ("El costo para que cuidemos a tu perro es de " + precioDiario1 + " euros por dia");
-//   periodoDeCuidado = prompt ("Cuantos días quieres que cuidemos a tu mascota?");
-//   alert ("Si nos contratas cuidaremos a tu" + " " + mascota + " " + "por" + " " + periodoDeCuidado + " " + "días. Sumando un total de" + " " + ((precioDiario1)*(periodoDeCuidado)) + " " + "euros");
-//    } else if (mascota === "gato"){
-// alert ("El costo para que cuidemos a tu gato es de " + precioDiario2 + " euros por dia");
-// periodoDeCuidado = prompt ("Cuantos días quieres que cuidemos a tu mascota?");
-// alert ("Si nos contratas cuidaremos a tu" + " " + mascota + " " + "por" + " " + periodoDeCuidado + " " + "días. Sumando un total de" + " " + ((precioDiario1)*(periodoDeCuidado)) + " " + "euros");
-// } else {
-//   alert ( "Si tienes una mascota de otro tipo puedes comunicarte por correo para elaborar un presupuesto")
-// }
-// }else {
-//   alert ("Puedes visitar nuesta pagina pero no puedes contratar el servicio.");
-//   }
-// }
+mascota = prompt ("Indicanos si tu mascota es perro o gato");
+  if (mascota === "perro"){
+  alert ("El costo para que cuidemos a tu perro es de " + precioDiario1 + " euros por dia");
+  periodoDeCuidado = prompt ("Cuantos días quieres que cuidemos a tu mascota?");
+  alert ("Si nos contratas cuidaremos a tu" + " " + mascota + " " + "por" + " " + periodoDeCuidado + " " + "días. Sumando un total de" + " " + ((precioDiario1)*(periodoDeCuidado)) + " " + "euros");
+   } else if (mascota === "gato"){
+alert ("El costo para que cuidemos a tu gato es de " + precioDiario2 + " euros por dia");
+periodoDeCuidado = prompt ("Cuantos días quieres que cuidemos a tu mascota?");
+alert ("Si nos contratas cuidaremos a tu" + " " + mascota + " " + "por" + " " + periodoDeCuidado + " " + "días. Sumando un total de" + " " + ((precioDiario1)*(periodoDeCuidado)) + " " + "euros");
+} else {
+  alert ( "Si tienes una mascota de otro tipo puedes comunicarte por correo para elaborar un presupuesto")
+}
+}else {
+  alert ("Puedes visitar nuesta pagina pero no puedes contratar el servicio.");
+  }
+}
 
 // Apertura de ventana para logueo
 
-function abrirVentana () { 
-document.getElementById('ventana').style.display = "block";
-}
-function cerrarVentana(){
-  document.getElementById('ventana').style.display = "none";
-}
+const registro = document.querySelector('#registro');
+const modal = document.querySelector('#ventana');
+
+registro.addEventListener('click', () => {
+  modal.classList.toggle('d-none');
+});
+
+// function abrirVentana () { 
+// document.getElementById('ventana').style.display = "block";
+// }
+// function cerrarVentana(){
+//   document.getElementById('ventana').style.display = "none";
+// }
 
  // Formulario de Registro---------------------------------------
 
 
-const $btnSignIn = document.querySelector ('.sign-in-btn'),
-    $btnSignUp = document.querySelector ('.sign-up-btn'),
-    $signUp = document.querySelector ('.sign-up'),
-    $signIn = document.querySelector('.sign-in'),
-    $registrarse = document.getElementById ('boton-registrarse');
+// const $btnSignIn = document.querySelector ('.sign-in-btn'),
+//     $btnSignUp = document.querySelector ('.sign-up-btn'),
+//     $signUp = document.querySelector ('.sign-up'),
+//     $signIn = document.querySelector('.sign-in'),
+//     $registrarse = document.getElementById ('boton-registrarse');
 
-document.addEventListener('click', e => {
-  if (e.target === $btnSignIn || e.target === $btnSignUp){
-      $signIn.classList.toggle('active');
-      $signUp.classList.toggle ('active');
-  }
-});
+// document.addEventListener('click', e => {
+//   if (e.target === $btnSignIn || e.target === $btnSignUp){
+//       $signIn.classList.toggle('active');
+//       $signUp.classList.toggle ('active');
+//   }
+// });
 
-document.addEventListener('click', e => {
-  let formData = {
-      nombre: document.getElementById('nombre').value,
-      email: document.getElementById ('email').value,
-      contraseña: document.getElementById ('contraseña').value,
-  }
-  localStorage.setItem("formData", JSON.stringify(formData));
-  dispData();
-  e.preventDefault();
-})
+// document.addEventListener('click', e => {
+//   let formData = {
+//       nombre: document.getElementById('nombre').value,
+//       email: document.getElementById ('email').value,
+//       contraseña: document.getElementById ('contraseña').value,
+//   }
+//   localStorage.setItem("formData", JSON.stringify(formData));
+//   dispData();
+//   e.preventDefault();
+// })
 
-function dispData(){
-  console.log (JSON.parse(localStorage.getItem("formData")));
-  if(localStorage.getItem("formData")){
-      let {nombre, email, contraseña} = JSON.parse(localStorage.getItem("formData"));
-  }
-}
-dispData();
-console.log();
+// function dispData(){
+//   console.log (JSON.parse(localStorage.getItem("formData")));
+//   if(localStorage.getItem("formData")){
+//       let {nombre, email, contraseña} = JSON.parse(localStorage.getItem("formData"));
+//   }
+// }
+// dispData();
+// console.log();
 
 
 // Funcion animacion de Titulo
