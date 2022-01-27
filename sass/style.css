@@ -380,6 +380,21 @@ button:hover {
   display: none;
 }
 
+.ventana {
+  background-color: rgba(0, 0, 0, 0.719);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 4;
+}
+
+.container-form {
+  background-color: #d3ccc5;
+  border-radius: 4px;
+}
+
 .container-formulario {
   height: 100vh;
   display: -webkit-box;
@@ -402,6 +417,10 @@ button:hover {
       justify-content: space-around;
   -webkit-transition: all .5s ease-out;
   transition: all .5s ease-out;
+}
+
+.cerrar-modal {
+  padding: 5px;
 }
 
 .welcome-back {

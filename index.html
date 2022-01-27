@@ -31,19 +31,20 @@
                     <li><a href="#reservas">Reservas</a></li>
                     <li><a href="#testimonios">Testimonios</a></li>
                     <li><a href="#servicios">Servicios</a></li>
-                    <li><a href="#">Registro</a></li>
+                    <li><a href="#ventana">Registro</a></li>
                 </ul>
             </nav>
 </header>
-<main>
+<section>
   <div class="ventana d-none" id="ventana">
     <div class="container-formulario" >
         <div class="container-form sign-up" id="registro">
+          <p class="cerrar-modal" id="cerrarModal">Cerrar</p>
             <div class="welcome-back">
                 <div class="message">
                     <h2>Bienvenido a Cuidamos a tu Mascota</h2>
                     <p>Si ya tienes una cuenta por favor inicia sesion aqui</p>
-                    <button class="sign-up-btn">Iniciar Sesion</button>
+                    <button class="sign-up-btn" id="sign-up-btn">Iniciar Sesion</button>
                 </div>
             </div>
             <form class="formulario">
@@ -59,7 +60,7 @@
                         <i class="fab fa-facebook-square"></i>
                     </div>
                 </div>
-                <p class="cuenta-gratis">Crear una cuenta gratis</p>
+                <p class="cuenta-gratis" id= "cuentaGratis">Crear una cuenta gratis</p>
                 <input type="text" id="nombre" placeholder="Nombre">
                 <input type="email" id="email" placeholder="Email">
                 <input type="password" id="contraseña"placeholder="Contraseña">
@@ -91,12 +92,14 @@
                 <div class="message">
                     <h2>Bienvenido de nuevo a Cuidamos a Tu Mascota</h2>
                     <p>Si aun no tienes una cuenta por favor registrese aqui</p>
-                    <button class="sign-in-btn">Registrarse</button>
+                    <button class="sign-in-btn" id="sign-in-btn">Registrarse</button>
                 </div>
             </div>
         </div>
     </div> 
   </div>
+</section> 
+<main>
     <div class="contenedor" id="sobrenosotros">
         <img  data-aos="flip-left" src="./imagenes/sabriymauro.png" alt="sabrina y mauro">
         <div class="contenedor-info" id="contenedor-info">
@@ -110,7 +113,9 @@
         </div>
       </div>
     </div>
+  </main>  
   <!-- Estadia -->
+  <section class="estadia">
     <div class="contenedor-estadia" id="reservas">
       <h3 class="reservar-estadia" id="reservar-estadia">Reserva una Estadía con nosotros</h3>
       <div id="intro-reservas"> 
@@ -119,8 +124,9 @@
         <button id="button">Saber Más</button>
       </div>
     </div>
+  </section>
 <!-- testimonios -->
-    <section class="testimonios" id="testimonios"> 
+<section class="testimonios" id="testimonios"> 
       <div class="intro-testimonios" id="intro-testimonios">
         <h3 class="titulo-testimonios">Querés saber que piensan de <span>"Cuidamos a tu Mascota"</span>...</h3>
         <!-- se agrega texto con JS -->
@@ -268,7 +274,7 @@
           <p class="contenido-saber" id="contenido-saber">Aqui vas a encontrar la descripcion de cada uno de los servicio que se ven ofrecidos previamente</p>
       </div> 
   </section>
-</main>
+
 <!-- footer -->
 <footer>
     <div class="copyright">

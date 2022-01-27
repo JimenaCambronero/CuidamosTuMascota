@@ -47,53 +47,64 @@ alert ("Si nos contratas cuidaremos a tu" + " " + mascota + " " + "por" + " " + 
 
 const registro = document.querySelector('#registro');
 const modal = document.querySelector('#ventana');
+const cerrarModal = document.querySelector ('#cerrarModal');
 
-registro.addEventListener('click', () => {
+const showModal = e => {
+  e.stopPropagation();
   modal.classList.toggle('d-none');
+};
+
+registro.addEventListener('click', e => {
+  showModal(e);
 });
 
-// function abrirVentana () { 
-// document.getElementById('ventana').style.display = "block";
-// }
-// function cerrarVentana(){
-//   document.getElementById('ventana').style.display = "none";
-// }
+cerrarModal.addEventListener ('click', e => {
+  showModal(e);
+})
 
- // Formulario de Registro---------------------------------------
+ //Formulario de Registro---------------------------------------
 
 
-// const $btnSignIn = document.querySelector ('.sign-in-btn'),
-//     $btnSignUp = document.querySelector ('.sign-up-btn'),
-//     $signUp = document.querySelector ('.sign-up'),
-//     $signIn = document.querySelector('.sign-in'),
-//     $registrarse = document.getElementById ('boton-registrarse');
+const btnSignIn = document.querySelector ('.sign-in-btn'),
+      btnSignUp = document.querySelector ('.sign-up-btn'),
+      signUp = document.querySelector ('.sign-up'),
+      signIn = document.querySelector('.sign-in'),
+      cuentaGratis = document.querySelector ('.cuenta-gratis'),
+      registrarse = document.getElementById ('boton-registrarse');
 
-// document.addEventListener('click', e => {
-//   if (e.target === $btnSignIn || e.target === $btnSignUp){
-//       $signIn.classList.toggle('active');
-//       $signUp.classList.toggle ('active');
-//   }
-// });
+const changeActive = e => {
+  if (e.target === btnSignIn || e.target === btnSignUp){
+      signIn.classList.toggle('active');
+      signUp.classList.toggle ('active');
+  }
+};
 
-// document.addEventListener('click', e => {
-//   let formData = {
-//       nombre: document.getElementById('nombre').value,
-//       email: document.getElementById ('email').value,
-//       contraseña: document.getElementById ('contraseña').value,
-//   }
-//   localStorage.setItem("formData", JSON.stringify(formData));
-//   dispData();
-//   e.preventDefault();
-// })
+btnSignIn.addEventListener('click', e => {
+  changeActive(e);
+});
+btnSignUp.addEventListener ('click', e => {
+  changeActive(e);
+});
 
-// function dispData(){
-//   console.log (JSON.parse(localStorage.getItem("formData")));
-//   if(localStorage.getItem("formData")){
-//       let {nombre, email, contraseña} = JSON.parse(localStorage.getItem("formData"));
-//   }
-// }
-// dispData();
-// console.log();
+cuentaGratis.addEventListener('click', e => {
+  let formData = {
+      nombre: document.getElementById('nombre').value,
+      email: document.getElementById ('email').value,
+      contraseña: document.getElementById ('contraseña').value,
+  }
+  localStorage.setItem("formData", JSON.stringify(formData));
+  dispData();
+  e.preventDefault();
+})
+
+function dispData(){
+  console.log (JSON.parse(localStorage.getItem("formData")));
+  if(localStorage.getItem("formData")){
+      let {nombre, email, contraseña} = JSON.parse(localStorage.getItem("formData"));
+  }
+}
+dispData();
+console.log();
 
 
 // Funcion animacion de Titulo
@@ -123,7 +134,7 @@ typeEffect(h1, speed);
 
 let parrafo = document.createElement('p');
 parrafo.setAttribute ("class", "parrafo-testimonios");
-parrafo.innerText = "Acá vas a poder leer algunas de las opiniones que hemos ido recibiendo a lo largo de este tiempo que llevamos cuidando mascotas, lo hacemos con mucho amor, cada una de ellas es cuidada y mimada como si fuesen propias."
+parrafo.innerHTML = "Acá vas a poder leer algunas de las opiniones que hemos ido recibiendo a lo largo de este tiempo que llevamos cuidando mascotas, lo hacemos con mucho amor, cada una de ellas es cuidada y mimada como si fuesen propias."
 // console.log(parrafo);
 
 let $introTestimonios = document.getElementById("intro-testimonios");
