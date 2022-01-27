@@ -1,3 +1,5 @@
+console.log("hola");
+
 const boton = document.getElementById ("consultar");
 
 boton.addEventListener ('click', promptMensaje);
@@ -64,7 +66,6 @@ cerrarModal.addEventListener ('click', e => {
 
  //Formulario de Registro---------------------------------------
 
-
 const btnSignIn = document.querySelector ('.sign-in-btn'),
       btnSignUp = document.querySelector ('.sign-up-btn'),
       signUp = document.querySelector ('.sign-up'),
@@ -86,7 +87,7 @@ btnSignUp.addEventListener ('click', e => {
   changeActive(e);
 });
 
-cuentaGratis.addEventListener('click', e => {
+registrarse.addEventListener('click', e => {
   let formData = {
       nombre: document.getElementById('nombre').value,
       email: document.getElementById ('email').value,
