@@ -66,10 +66,10 @@ cerrarModal.addEventListener ('click', e => {
 
  //Formulario de Registro---------------------------------------
 
-const btnSignIn = document.querySelector ('.sign-in-btn'),
-      btnSignUp = document.querySelector ('.sign-up-btn'),
-      signUp = document.querySelector ('.sign-up'),
-      signIn = document.querySelector('.sign-in'),
+const btnSignIn = document.querySelector ('.sign-in-btn'), //boton iniciar sesion
+      btnSignUp = document.querySelector ('.sign-up-btn'), // boton registrarse
+      signUp = document.querySelector ('.sign-up'), // contenedor registrarse
+      signIn = document.querySelector('.sign-in'),// contenedor iniciar sesion
       cuentaGratis = document.querySelector ('.cuenta-gratis'),
       registrarse = document.getElementById ('boton-registrarse');
 
@@ -138,8 +138,8 @@ parrafo.setAttribute ("class", "parrafo-testimonios");
 parrafo.innerHTML = "Acá vas a poder leer algunas de las opiniones que hemos ido recibiendo a lo largo de este tiempo que llevamos cuidando mascotas, lo hacemos con mucho amor, cada una de ellas es cuidada y mimada como si fuesen propias."
 // console.log(parrafo);
 
-let $introTestimonios = document.getElementById("intro-testimonios");
-$introTestimonios.append(parrafo);
+let introTestimonios = document.getElementById("intro-testimonios");
+introTestimonios.append(parrafo);
 
 // agregar texto con JavaScrip con Reserva de estadias.
 
@@ -147,21 +147,35 @@ let introReservas = document.createElement ('p');
 introReservas.setAttribute ('class', "intro-reservas");
 introReservas.innerHTML = "Queremos que las mascotas sean felices y estén cuidadas con el mismo cariño que en sus casas. En Cuidamos a tu Mascota vas a encontrar a una segunda familia para ellos. Anhelamos que sus dueños estén tranquilos en su ausencia, sabiendo que su mascota será muy bien atendida y cuidada. Les proporcionaremos todas las atenciones que nuestros amiguitos peludos necesiten y sus dueños estará al tanto de todo lo que suceda durante su estadía. Estas también son vacaciones para tu mascota!💘 Atenderemos a cada uno de forma individual, según su carácter y necesidades con mucho amor y juegos. Los esperamos!! " 
 
-let $contenedorEstadia = document.getElementById ("intro-reservas");
-$contenedorEstadia.append(introReservas);
-// console.log (introReservas);
+let contenedorEstadia = document.getElementById ("intro-reservas");
+contenedorEstadia.append(introReservas);
+console.log (introReservas);
 
 // boton se servicios
 
-let botonSaber = document.getElementById("boton-saber")
-botonSaber.addEventListener ("click", respuestaClick)
+// let botonSaber = document.querySelector("#boton-saber")
+// botonSaber.addEventListener ("click", respuestaClick)
 
-function respuestaClick(){
-   if (document.getElementById ("contenido-saber").style.display == "block"){ 
-    document.getElementById ("contenido-saber").style.display = "none";
-    document.getElementById ("boton-saber").innerHTML = "Saber Más";
-  }else{
-    document.getElementById ("contenido-saber").style.display = "block";
-    document.getElementById ("boton-saber").innerHTML = "Ocultar";
+// function respuestaClick(){
+//    if (document.querySelector ("#contenido-saber").style.display == "block"){ 
+//     document.querySelector ("#contenido-saber").style.display = "none";
+//     document.querySelector("#boton-saber").innerHTML = "Saber Más";
+//   }else{
+//     document.querySelector ("#contenido-saber").style.display = "block";
+//     document.querySelector("#boton-saber").innerHTML = "Ocultar";
+//   }
+// }
+ 
+const servicios = document.querySelector('#servicios');
+
+servicios.addEventListener('click', (e) => {
+  if(e.target.id === 'boton-saber'){
+    if (document.querySelector ("#contenido-saber").style.display == "block"){ 
+        document.querySelector ("#contenido-saber").style.display = "none";
+        document.querySelector("#boton-saber").innerHTML = "Saber Más";
+    }else{
+      document.querySelector ("#contenido-saber").style.display = "block";
+     document.querySelector("#boton-saber").innerHTML = "Ocultar";
+    }
   }
-}
+});

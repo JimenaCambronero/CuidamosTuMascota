@@ -68,7 +68,7 @@ header label .fa-2x:hover {
 
 @media (max-width: 1024px) {
   .menu ul li a {
-    font-size: 1em;
+    font-size: 1.2em;
   }
 }
 
@@ -78,7 +78,7 @@ header label .fa-2x:hover {
   }
   .menu {
     position: absolute;
-    background: #c9c4c4;
+    background: #a4ac94;
     width: 50%;
     height: 100vh;
     z-index: 1;
@@ -98,7 +98,7 @@ header label .fa-2x:hover {
   }
   .menu ul li a {
     color: #7a7a7a;
-    font-size: 1em;
+    font-size: 1.2em;
   }
   #btn-menu:checked ~ .menu {
     margin: 0;
@@ -373,6 +373,10 @@ button:hover {
   font-size: 0.5em;
   letter-spacing: 0.1em;
   margin-top: 0.8em;
+  display: none;
+}
+
+.desplegar {
   display: none;
 }
 
