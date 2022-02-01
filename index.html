@@ -7,15 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">  
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <!-- movimientos -->
+    <link
+    rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css"/>
+
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- enlace bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
     <link rel="stylesheet" href="./sass/style.css">
     <!-- estilo letras -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Roboto+Condensed:wght@300;700&family=Roboto:wght@100;300;400;500;900&display=swap" rel="stylesheet">
-    
+    <!-- animaciones -->
+   
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
     <title>Cuidamos a Tu Mascota</title>
 </head>
@@ -67,8 +72,6 @@
                 <input type="button" id="boton-registrarse" value="Registrarse">
             </form>
         </div>
-
-
         <div class="container-form sign-in" id="registro">
           <p class="cerrar-modal" id="cerrarModal">Cerrar</p>
             <form class="formulario">
@@ -106,7 +109,7 @@
         <div class="contenedor-info" id="contenedor-info">
             <h1 class="titulo-home">Cuidamos a tu Mascota</h1>
             <h2 class="subtitulo">Somos <span>Sabrina</span> y <span>Mauro</span>. </h2>
-            <p class="presentacion">Les damos la bienvenida a nuestra página web. ¿Necesitas que durante un tiempo cuidemos de tu mascota o no puedes encargarte de sus cuidados? Lo hacemos por vos y te ayudamos en todo lo que necesites, tambien ofrecemos paseos y visitas a domicilio. </p> 
+            <p class="presentacion" id="presentacion">Les damos la bienvenida a nuestra página web. ¿Necesitas que durante un tiempo cuidemos de tu mascota o no puedes encargarte de sus cuidados? Lo hacemos por vos y te ayudamos en todo lo que necesites, tambien ofrecemos paseos y visitas a domicilio. </p> 
       
         <div class="botones">
             <button class="btn-contratar" id="contratar">Contratar Servicio</button>
@@ -116,7 +119,7 @@
     </div>
   </main>  
   <!-- Estadia -->
-  <section class="estadia">
+  <section id="seccionEstadia" class="estadia">
     <div class="contenedor-estadia" id="reservas">
       <h3 class="reservar-estadia" id="reservar-estadia">Reserva una Estadía con nosotros</h3>
       <div id="intro-reservas"> 
@@ -127,9 +130,9 @@
     </div>
   </section>
 <!-- testimonios -->
-<section class="testimonios" id="testimonios"> 
+<section  id="testimonios" class="testimonios"> 
       <div class="intro-testimonios" id="intro-testimonios">
-        <h3 class="titulo-testimonios">Querés saber que piensan de <span>"Cuidamos a tu Mascota"</span>...</h3>
+        <h3 class="titulo-testimonios ">Querés saber que piensan de <span>"Cuidamos a tu Mascota"</span>...</h3>
         <!-- se agrega texto con JS -->
       </div>   
         <div class="container-testimonios">
@@ -250,75 +253,42 @@
       </div>
     </div>
   </div>
+
   </section>
 
-  <section class="contenedor-servicios" id="servicios">
+  <section id="contenedor-servicios" class="contenedor-servicios">
     <h3 class="titulo-servicios">Servicios que ofrecemos.</h3>
-    <h4 class="subtitulo-servicios">En esta sección vas a encontrar los servicios que ofrece <span>Cuidamos a tu Mascota</span> tambien podes comunicarte con nosotros en caso de que requieras alguno en especial y que no se encuentre disponible en la página</h4>
-
-   <section class="contenedor-servicios" id="servicios">
-    <h3 class="titulo-servicios">Servicios que ofrecemos.</h3>
-    <h4 class="subtitulo-servicios">En esta sección vas a encontrar los servicios que ofrece <span>Cuidamos a tu Mascota</span> tambien podes comunicarte con nosotros en caso de que requieras alguno en especial y que no se encuentre disponible en la página</h4>
+    <h4 class="subtitulo-servicios">En esta sección vas a encontrar los servicios que ofrece <span>Cuidamos a tu Mascota</span> tambien podes comunicarte con nosotros en caso de que requieras alguno en especial y que no se encuentre disponible en la página</h4> 
+    <p class="mas-mascotas" id="masMacotas"> 
+      <!-- texto agregago con JS -->
+    </p>
 
     <div class="servicios" id="servicios">
       <div class="servicio">
         <img src="./imagenes/servicios/house.png" alt="hospedaje">
           <p class="descripcion">Alojamiento</p>  
           <button class="boton-saber" id="boton-saber"> Saber más</button>
-          <p class="contenido-saber" id="contenido-saber">Aqui vas a encontrar la descripcion de cada uno de los servicio que se ven ofrecidos previamente</p>
+          <p class="contenido-saber d-none" id="contenido-saber">Aqui vas a encontrar la descripcion de cada uno de los servicio que se ven ofrecidos previamente</p>
 
         <img src="./imagenes/servicios/parque.png" alt="paseo">
           <p class="descripcion">Paseo</p> 
           <button class="boton-saber" id="boton-saber"> Saber más</button>
-          <p class="contenido-saber" id="contenido-saber">Aqui vas a encontrar la descripcion de cada uno de los servicio que se ven ofrecidos previamente</p>
+          <p class="contenido-saber d-none" id="contenido-saber">Aqui vas a encontrar la descripcion de cada uno de los servicio que se ven ofrecidos previamente</p>
       </div>
 
       <div class="servicio">  
         <img src="./imagenes/servicios/comida.png" alt="alimento">
           <p class="descripcion">Alimento</p>
           <button class="boton-saber" id="boton-saber"> Saber más</button>
-          <p class="contenido-saber" id="contenido-saber">Aqui vas a encontrar la descripcion de cada uno de los servicio que se ven ofrecidos previamente</p>      
+          <p class="contenido-saber d-none" id="contenido-saber">Aqui vas a encontrar la descripcion de cada uno de los servicio que se ven ofrecidos previamente</p>   
+
           <img src="./imagenes/servicios/chat.png" alt="chat">
           <p class="descripcion">Comunicación constante</p>   
           <button class="boton-saber" id="boton-saber"> Saber más</button>
-          <p class="contenido-saber" id="contenido-saber">Aqui vas a encontrar la descripcion de cada uno de los servicio que se ven ofrecidos previamente</p>
+          <p class="contenido-saber d-none" id="contenido-saber">Aqui vas a encontrar la descripcion de cada uno de los servicio que se ven ofrecidos previamente</p>
       </div>
     </div>
-      <!-- <div class="servicio">
-        <button class="boton-saber" id="boton-saber"> Saber más</button>
-          <p class="contenido-saber" id="contenido-saber">Aqui vas a encontrar la descripcion de cada uno de los servicio que se ven ofrecidos previamente</p>
-      </div>  -->
   </section>  
-
-
-
-
-
-
-  <!-- servicios -->
-  <!-- <section class="contenedor-servicios" id="servicios">
-    <h3 class="titulo-servicios">Servicios que ofrecemos.</h3>
-    <h4 class="subtitulo-servicios">En esta sección vas a encontrar los servicios que ofrece <span>Cuidamos a tu Mascota</span> tambien podes comunicarte con nosotros en caso de que requieras alguno en especial y que no se encuentre disponible en la página</h4>
-
-    <div class="servicios">
-      <div class="servicio">
-        <img src="./imagenes/servicios/house.png" alt="hospedaje">
-          <p class="descripcion">Alojamiento</p>  
-        <img src="./imagenes/servicios/parque.png" alt="paseo">
-          <p class="descripcion">Paseo</p> 
-      </div>
-      <div class="servicio">  
-        <img src="./imagenes/servicios/comida.png" alt="alimento">
-          <p class="descripcion">Alimento</p>
-          <img src="./imagenes/servicios/chat.png" alt="chat">
-          <p class="descripcion">Comunicación constante</p>        
-      </div>
-    </div>
-      <div class="servicio">
-        <button class="boton-saber" id="boton-saber"> Saber más</button>
-          <p class="contenido-saber" id="contenido-saber">Aqui vas a encontrar la descripcion de cada uno de los servicio que se ven ofrecidos previamente</p>
-      </div> 
-  </section> -->
 
 <!-- footer -->
 <footer>

@@ -1,5 +1,7 @@
 .contenedor-servicios{
     padding: 3em 7em;
+    animation-delay: 2.5s;
+    animation-duration: 4s;
 }
 
 .titulo-servicios{
@@ -10,7 +12,8 @@
     text-align: center;
 }
 
-.subtitulo-servicios{
+.subtitulo-servicios,
+.mas-mascotas{
     font-family: 'Roboto', sans-serif;
     font-size: 1.2em;
     letter-spacing: 0.1em;
@@ -46,18 +49,12 @@
 
 .boton-saber{
     border-radius: 23px;
-    font-size: 0.8em;
+    font-size: 0.5em;
     padding: 0.5em 2em;
 }
 
 .contenido-saber{
     font-size: 0.5em;
     letter-spacing: 0.1em;
-    margin-top: 0.8em;  
-    display: none;
-}
-
-
-.desplegar{
-    display: none;
+    margin-top: 0.8em;     
 }

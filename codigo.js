@@ -141,7 +141,7 @@ parrafo.innerHTML = "Acá vas a poder leer algunas de las opiniones que hemos id
 let introTestimonios = document.getElementById("intro-testimonios");
 introTestimonios.append(parrafo);
 
-// agregar texto con JavaScrip con Reserva de estadias.
+// agregar texto con JavaScrip Reserva de estadias.
 
 let introReservas = document.createElement ('p');
 introReservas.setAttribute ('class', "intro-reservas");
@@ -149,33 +149,40 @@ introReservas.innerHTML = "Queremos que las mascotas sean felices y estén cuida
 
 let contenedorEstadia = document.getElementById ("intro-reservas");
 contenedorEstadia.append(introReservas);
-console.log (introReservas);
+// console.log (introReservas);
+
+// aparecer texto lentamente con Jquery
+
+$('#presentacion').hide ();
+$('#presentacion').show (2500);
+
+//animacion de secciones
+
+$(document).ready(function(){
+  $('#sobrenosotros').addClass('animated fadeInLeft');
+  $('#seccionEstadia').addClass ('animated fadeInRight');
+  $('#testimonios').addClass ('animated fadeInLeft');
+  $('#contenedor-servicios').addClass ('animated fadeInRight');
+});
+
+
+// texto agregado con jquery
+
+$('#masMacotas').append("¡Si tienes algun otro tipo de mascota, recordá que podes consultarnos.");
 
 // boton se servicios
 
-// let botonSaber = document.querySelector("#boton-saber")
-// botonSaber.addEventListener ("click", respuestaClick)
+const btnSaberMas = document.querySelectorAll('.boton-saber');
 
-// function respuestaClick(){
-//    if (document.querySelector ("#contenido-saber").style.display == "block"){ 
-//     document.querySelector ("#contenido-saber").style.display = "none";
-//     document.querySelector("#boton-saber").innerHTML = "Saber Más";
-//   }else{
-//     document.querySelector ("#contenido-saber").style.display = "block";
-//     document.querySelector("#boton-saber").innerHTML = "Ocultar";
-//   }
-// }
- 
-const servicios = document.querySelector('#servicios');
+for (let i = 0; i < btnSaberMas.length; i++){
+  btnSaberMas[i].addEventListener('click', e => {
+    const contenidoSaberMas = e.target.nextElementSibling;
+    contenidoSaberMas.classList.toggle('d-none');
 
-servicios.addEventListener('click', (e) => {
-  if(e.target.id === 'boton-saber'){
-    if (document.querySelector ("#contenido-saber").style.display == "block"){ 
-        document.querySelector ("#contenido-saber").style.display = "none";
-        document.querySelector("#boton-saber").innerHTML = "Saber Más";
-    }else{
-      document.querySelector ("#contenido-saber").style.display = "block";
-     document.querySelector("#boton-saber").innerHTML = "Ocultar";
+    if (contenidoSaberMas.classList.contains('d-none')) {
+      e.target.innerHTML = 'Saber más'
+    }else {
+      e.target.innerHTML = 'Ocultar';
     }
-  }
-});
+  });
+}

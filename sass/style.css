@@ -243,6 +243,10 @@ button:hover {
 
 .testimonios {
   padding-bottom: 3em;
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
 }
 
 .intro-testimonios {
@@ -305,8 +309,19 @@ button:hover {
   font-weight: normal;
 }
 
+.estadia {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+}
+
 .contenedor-servicios {
   padding: 3em 7em;
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
 }
 
 .titulo-servicios {
@@ -317,7 +332,8 @@ button:hover {
   text-align: center;
 }
 
-.subtitulo-servicios {
+.subtitulo-servicios,
+.mas-mascotas {
   font-family: 'Roboto', sans-serif;
   font-size: 1.2em;
   letter-spacing: 0.1em;
@@ -325,7 +341,8 @@ button:hover {
   margin-top: 1.5em;
 }
 
-.subtitulo-servicios span {
+.subtitulo-servicios span,
+.mas-mascotas span {
   font-family: 'Amatic SC', cursive;
   color: #99c04a;
   text-transform: uppercase;
@@ -365,7 +382,7 @@ button:hover {
 
 .boton-saber {
   border-radius: 23px;
-  font-size: 0.8em;
+  font-size: 0.5em;
   padding: 0.5em 2em;
 }
 
@@ -373,11 +390,6 @@ button:hover {
   font-size: 0.5em;
   letter-spacing: 0.1em;
   margin-top: 0.8em;
-  display: none;
-}
-
-.desplegar {
-  display: none;
 }
 
 .d-none {
