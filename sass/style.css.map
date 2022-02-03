@@ -9,7 +9,8 @@
         "_testimonios.scss",
         "_reservarestadia.scss",
         "_servicios.scss",
-        "_formularioregistro.scss"
+        "_formularioregistro.scss",
+        "_formularioreservas.scss"
     ],
     "names": [],
     "file": "style.css"

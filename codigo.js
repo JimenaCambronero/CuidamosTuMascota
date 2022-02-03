@@ -1,49 +1,49 @@
 console.log("hola");
 
-const boton = document.getElementById ("consultar");
+// const boton = document.getElementById ("consultar");
 
-boton.addEventListener ('click', promptMensaje);
+// boton.addEventListener ('click', promptMensaje);
 
-let precioDiario1 = 15;
-let precioDiario2 = 13;
-let nombre = "";
-let edad = "";
-let mascota = "";
+// let precioDiario1 = 15;
+// let precioDiario2 = 13;
+// let nombre = "";
+// let edad = "";
+// let mascota = "";
 
 
-function promptMensaje(){ 
+// function promptMensaje(){ 
 
-nombre = prompt ("Hola! Ingresa tu nombre aquí!");
-alert ("Bienvenida/o " + " " + nombre);
+// nombre = prompt ("Hola! Ingresa tu nombre aquí!");
+// alert ("Bienvenida/o " + " " + nombre);
 
-alert ("Gracias por visitarnos, ahora te haremos unas preguntas ...!");
+// alert ("Gracias por visitarnos, ahora te haremos unas preguntas ...!");
 
-edad = parseInt (prompt ("Ingresa tu edad por favor"));
+// edad = parseInt (prompt ("Ingresa tu edad por favor"));
 
-  if (edad >=18) {
-    alert (" Puedes ingresar a nuestro sitio y realizar una reserva " + nombre); 
+//   if (edad >=18) {
+//     alert (" Puedes ingresar a nuestro sitio y realizar una reserva " + nombre); 
 
-cantidadMascotas = parseInt (prompt ("Ingresa cuantas mascotas quieres que cuidemos!"));
-  if (cantidadMascotas >=1 && cantidadMascotas <=3){
-  alert ("Podemos cuidar a tu/s mascota/s");
-  }
+// cantidadMascotas = parseInt (prompt ("Ingresa cuantas mascotas quieres que cuidemos!"));
+//   if (cantidadMascotas >=1 && cantidadMascotas <=3){
+//   alert ("Podemos cuidar a tu/s mascota/s");
+//   }
 
-mascota = prompt ("Indicanos si tu mascota es perro o gato");
-  if (mascota === "perro"){
-  alert ("El costo para que cuidemos a tu perro es de " + precioDiario1 + " euros por dia");
-  periodoDeCuidado = prompt ("Cuantos días quieres que cuidemos a tu mascota?");
-  alert ("Si nos contratas cuidaremos a tu" + " " + mascota + " " + "por" + " " + periodoDeCuidado + " " + "días. Sumando un total de" + " " + ((precioDiario1)*(periodoDeCuidado)) + " " + "euros");
-   } else if (mascota === "gato"){
-alert ("El costo para que cuidemos a tu gato es de " + precioDiario2 + " euros por dia");
-periodoDeCuidado = prompt ("Cuantos días quieres que cuidemos a tu mascota?");
-alert ("Si nos contratas cuidaremos a tu" + " " + mascota + " " + "por" + " " + periodoDeCuidado + " " + "días. Sumando un total de" + " " + ((precioDiario1)*(periodoDeCuidado)) + " " + "euros");
-} else {
-  alert ( "Si tienes una mascota de otro tipo puedes comunicarte por correo para elaborar un presupuesto")
-}
-}else {
-  alert ("Puedes visitar nuesta pagina pero no puedes contratar el servicio.");
-  }
-}
+// mascota = prompt ("Indicanos si tu mascota es perro o gato");
+//   if (mascota === "perro"){
+//   alert ("El costo para que cuidemos a tu perro es de " + precioDiario1 + " euros por dia");
+//   periodoDeCuidado = prompt ("Cuantos días quieres que cuidemos a tu mascota?");
+//   alert ("Si nos contratas cuidaremos a tu" + " " + mascota + " " + "por" + " " + periodoDeCuidado + " " + "días. Sumando un total de" + " " + ((precioDiario1)*(periodoDeCuidado)) + " " + "euros");
+//    } else if (mascota === "gato"){
+// alert ("El costo para que cuidemos a tu gato es de " + precioDiario2 + " euros por dia");
+// periodoDeCuidado = prompt ("Cuantos días quieres que cuidemos a tu mascota?");
+// alert ("Si nos contratas cuidaremos a tu" + " " + mascota + " " + "por" + " " + periodoDeCuidado + " " + "días. Sumando un total de" + " " + ((precioDiario1)*(periodoDeCuidado)) + " " + "euros");
+// } else {
+//   alert ( "Si tienes una mascota de otro tipo puedes comunicarte por correo para elaborar un presupuesto")
+// }
+// }else {
+//   alert ("Puedes visitar nuesta pagina pero no puedes contratar el servicio.");
+//   }
+// }
 
 // Apertura de ventana para logueo
 
@@ -158,17 +158,40 @@ $('#presentacion').show (2500);
 
 //animacion de secciones
 
-$(document).ready(function(){
-  $('#sobrenosotros').addClass('animated fadeInLeft');
-  $('#seccionEstadia').addClass ('animated fadeInRight');
-  $('#testimonios').addClass ('animated fadeInLeft');
-  $('#contenedor-servicios').addClass ('animated fadeInRight');
-});
-
+$('#sobrenosotros').addClass('animated fadeInLeft');
+$('#seccionEstadia').addClass ('animated fadeInRight');
+$('#testimonios').addClass ('animated fadeInLeft');
+$('#contenedor-servicios').addClass ('animated fadeInRight');
 
 // texto agregado con jquery
 
 $('#masMacotas').append("¡Si tienes algun otro tipo de mascota, recordá que podes consultarnos.");
+
+// Formulario
+
+$('#presupuesto').click(function (e) { 
+  e.preventDefault();
+  let nombreDueño = $('#nombre-dueño').val()
+  let apellidoDueño = $('#apellido-dueño').val()
+  let emailDueño = $('#email-dueño').val()
+  let cantidadMascotas = parseInt($('#cantidad-mascotas').val())
+  let cantidadPerros = parseInt($('#cantidad-perros').val())
+  let cantidadGatos = parseInt($('#cantidad-gatos').val())
+  let fecha = $('#fecha').val()
+  let totalDias = parseInt($('#total-dias').val())
+  let precio = 15
+
+if(cantidadMascotas <= 2) {
+
+  //en construcción
+  
+  
+  } else{
+  alert ("Son demasiadas mascotas, lo sentimos");
+}
+  
+  
+});
 
 // boton se servicios
 
