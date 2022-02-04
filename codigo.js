@@ -180,17 +180,35 @@ $('#presupuesto').click(function (e) {
   let fecha = $('#fecha').val()
   let totalDias = parseInt($('#total-dias').val())
   let precio = 15
-
-if(cantidadMascotas <= 2) {
-
-  //en construcción
   
+
+if(cantidadMascotas <= 2 && cantidadPerros + cantidadGatos <= 2) {
+  let resultadoPresupuesto = (parseInt(cantidadMascotas) * parseInt(precio)) * parseInt(totalDias)
+  // console.log(resultadoPresupuesto);
+  let datosFormulario = {
+    nombre: nombreDueño,
+    apellido: apellidoDueño,
+    email: emailDueño,
+    cantidadMascotas: cantidadMascotas,
+    perros: cantidadPerros,
+    gatos: cantidadGatos,
+    fechaInicio: fecha,
+    totalDias: totalDias,
+    presupuesto: resultadoPresupuesto,
+  }
   
+  localStorage.setItem('datosFormulario',JSON.stringify(datosFormulario)); dispData2();
+  
+  function dispData2(){
+    console.log (JSON.parse (localStorage.getItem('datosFormulario')));
+    if (localStorage.getItem ('datosFormulario')){
+      let {nombre, apellido, email, cantidadMascotas, perros, gatos, fechaInicio, totalDias, presupuesto} = JSON.parse(localStorage.getItem('datosFormulario'))
+    }
+  }
+
   } else{
   alert ("Son demasiadas mascotas, lo sentimos");
-}
-  
-  
+}  
 });
 
 // boton se servicios
