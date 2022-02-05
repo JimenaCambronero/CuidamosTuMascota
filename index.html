@@ -73,7 +73,7 @@
             </form>
         </div>
         <div class="container-form sign-in" id="registro">
-          <p class="cerrar-modal" id="cerrarModal">Cerrar</p>
+          <p class="cerrar-modal" id="cerrarModal2">Cerrar</p>
             <form class="formulario">
                 <h2 class="create-account">Iniciar Sesion</h2>
                 <div class="iconos">
@@ -111,82 +111,100 @@
             <h2 class="subtitulo">Somos <span>Sabrina</span> y <span>Mauro</span>. </h2>
             <p class="presentacion" id="presentacion">Les damos la bienvenida a nuestra página web. ¿Necesitas que durante un tiempo cuidemos de tu mascota o no puedes encargarte de sus cuidados? Lo hacemos por vos y te ayudamos en todo lo que necesites, tambien ofrecemos paseos y visitas a domicilio. </p> 
       
-        <div class="botones">
-            <button class="btn-contratar" id="contratar">Contratar Servicio</button>
-            <button class="btn-consultar" id="consultar">Presupuesto Rapido</button>
+        <div class="botones" >
+          <a href="#presupuesto">
+            <button class="btn-consultar" type="submit">Presupuesto Rapido</button>
+          </a>  
         </div>
       </div>
     </div>
   </main>  
   <!-- Estadia -->
   <section id="seccionEstadia" class="estadia">
-    <div class="contenedor-estadia" id="reservas">
-      <h3 class="reservar-estadia" id="reservar-estadia">Reserva una Estadía con nosotros</h3>
-      <div id="intro-reservas"> 
-        <!-- se agrega texto con JS -->
-      </div>
-        <button id="button">Saber Más</button>
+      <div class="contenedor-estadia" id="reservas">
+          <h3 class="reservar-estadia" id="reservar-estadia">Reserva una Estadía con nosotros</h3>
+          <div id="intro-reservas"> <!-- se agrega texto con JS --></div>
+            <button id="button">Saber Más</button>
       </div>
 
     <div>
-      <form action="" id="formulario-contacto">
+      <form id="formulario-presupuesto" class="formulario-presupuesto" method="post" action="">
         <div class="row g-2">
-            <div class="col-md-4">
-              <input type="text" id="nombre-dueño" class="form-control" placeholder="Nombre" >
-            </div>
-            <div class="col-md-4">
-              <input type="text" id="apellido-dueño"class="form-control" placeholder="Apellido">
-            </div>    
+              <div class="col-md-6">
+                <input type="text" id="nombre-dueño" class="form-control" placeholder="Nombre" >
+              </div>
+              <div class="col-md-6">
+                <input type="text" id="apellido-dueño"class="form-control" placeholder="Apellido">
+              </div>   
+       </div> 
         <div class="row g-2">
-            <div class="col-md-4">
-              <input type="email" id="email-dueño" class="form-control" placeholder="email">
-            </div>
-            <div class="col-md-4">
-              <input type="password" id="contraseña-dueño" class="form-control" placeholder="password">
-            </div>
+              <div class="col-md-6">
+                <input type="email" id="email-dueño" class="form-control" placeholder="email">
+              </div>
+              <div class="col-md-6">
+                <input type="password" id="contraseña-dueño" class="form-control" placeholder="password">
+              </div>
+        </div>
             
         <div class="row g-3">
-          <div class="col-md-2">
-            <input type="text" id='cantidad-mascotas'class="form-control" placeholder="Total mascotas (en numeros)">
-          </div>
-            <div class="col-md-1">
-              <select class="form-select" id="cantidad-perros">
-                <option selected>Perros a cuidar</option>
-                <option value="0">Cero</option>
-                <option value="1">Uno</option>
-                <option value="2">Dos</option>
-              </select>
+              <div class="col-md-2">
+                <input type="text" id='cantidad-mascotas'class="form-control" placeholder="Total mascotas (en numeros)">
+              </div>
+              <div class="col-md-2">
+                <select class="form-select" id="cantidad-perros">
+                  <option selected>Perros a cuidar</option>
+                  <option value="0">Cero</option>
+                  <option value="1">Uno</option>
+                  <option value="2">Dos</option>
+                </select>
+              </div>
+              <div class="col-md-2">
+                <select class="form-select" id="cantidad-gatos">
+                  <option selected>Gatos a cuidar?</option>
+                  <option value="0">Cero</option>
+                  <option value="1">Uno</option>
+                  <option value="2">Dos</option>
+                </select>
+              </div>
+              <div class="col-md-3">
+                <span>Selecciona a partir de que fecha</span>
+              </div>
+              <div class="col-md-3">
+                <input type="date" id="fecha" class="form-control" name="fecha">
+              </div>
             </div>
-            <div class="col-md-1">
-              <select class="form-select" id="cantidad-gatos">
-                <option selected>Gatos a cuidar?</option>
-                <option value="0">Cero</option>
-                <option value="1">Uno</option>
-                <option value="2">Dos</option>
-              </select>
+              <div class="row g-3">
+              <div class="col-md-6">
+                <input type="text" id="total-dias" class="form-control" placeholder="Cantidad de dias bajo cuidado (en numeros)">
+              </div>
+              <div class="col-md-3">
+                <button type="submit" id="presupuesto" name= "boton1" value="presupuesto" class="btn btn-primary">Presupuesto Rapido</button>
+              </div>
+              <div class="col-md-3">
+                <button type="submit" id="consulta" name="boton2" value="consulta" class="btn btn-primary">Enviar Consulta</button>
+              </div> 
             </div>
-            <div class="col-md-2">
-              <span>Selecciona a partir de que fecha</span>
-            </div>
-            <div class="col-md-2">
-              <input type="date" id="fecha" class="form-control" name="fecha">
-          </div>
-          </div>
-
-          <div class="col-md-4">
-            <input type="text" id="total-dias" class="form-control" placeholder="Cantidad de dias bajo cuidado (en numeros)">
-          </div>
-          <div class="col-md-2">
-            <button type="submit" id="presupuesto" name= "boton1" value="presupuesto" class="btn btn-primary">Presupuesto Rapido</button>
-          </div>
-          <div class="col-md-2">
-            <button type="submit" id="consulta" name="boton2" value="consulta" class="btn btn-primary">Enviar Consulta</button>
-          </div> 
         </div>
-      </div>
     </form>
     </div>
-  </section>
+    <div class="tarjetas-aleatorias">
+      <h3 class="titulo-tj"> Si te gustan las mascotas no dejes de mirar esta coleccion de imagenes</h3>
+        <div class="resultados">
+          <div id="gato-resultado" class="resultado">
+            <p>Click en el boton de abajo para ver 🐱</p>
+          </div>
+          <div id="perro-resultado" class="resultado">
+            <p>Click en el boton de abajo para ver 🐶</p>
+          </div>
+        </div>
+        
+        <div class="botones-tj">
+          <button class="boton-gato" id="gato-btn">Ver Gatitos</button>
+          <button class="boton-perro" id="perro-btn">Ver Perritos</button>
+        </div>
+      </div>
+</section>    
+  
 <!-- testimonios -->
 <section  id="testimonios" class="testimonios"> 
       <div class="intro-testimonios" id="intro-testimonios">

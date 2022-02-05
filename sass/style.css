@@ -152,11 +152,11 @@ header label .fa-2x:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 5em;
+  padding: 5em 5em 10em;
 }
 
 .contenedor img {
-  height: 400px;
+  height: 550px;
   margin: 2em;
 }
 
@@ -250,7 +250,7 @@ button:hover {
 }
 
 .intro-testimonios {
-  padding: 1em 7em;
+  padding: 5em 5em 10em;
 }
 
 .titulo-testimonios {
@@ -290,7 +290,7 @@ button:hover {
 }
 
 .contenedor-estadia {
-  padding: 1em 7em;
+  padding: 5em 5em 10em;
 }
 
 .reservar-estadia {
@@ -316,8 +316,94 @@ button:hover {
           animation-duration: 4s;
 }
 
+.tarjetas-aleatorias {
+  font-family: 'Open Sans', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0;
+  padding-top: 2em;
+}
+
+.titulo-tj {
+  font-family: 'Amatic SC', cursive;
+  font-size: 2.5em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 1.5em;
+}
+
+.resultados {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.resultado {
+  background-color: #dbd4d4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 10px;
+  height: 400px;
+  width: 300px;
+}
+
+.resultado img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.botones-tj {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.boton-gato, .boton-perro {
+  background-color: #99c04a;
+  border: 0;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px;
+  margin: 10px;
+  width: 300px;
+}
+
 .contenedor-servicios {
-  padding: 3em 7em;
+  padding: 5em 5em 10em;
   -webkit-animation-delay: 2.5s;
           animation-delay: 2.5s;
   -webkit-animation-duration: 4s;
@@ -572,5 +658,11 @@ button:hover {
 .sign-up.active {
   opacity: 0;
   visibility: hidden;
+}
+
+.formulario-presupuesto {
+  width: 70%;
+  margin-right: auto;
+  margin-left: auto;
 }
 /*# sourceMappingURL=style.css.map */
