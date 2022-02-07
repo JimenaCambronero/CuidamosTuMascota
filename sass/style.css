@@ -310,8 +310,8 @@ button:hover {
 }
 
 .estadia {
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
   -webkit-animation-duration: 4s;
           animation-duration: 4s;
 }
@@ -661,8 +661,44 @@ button:hover {
 }
 
 .formulario-presupuesto {
+  background-image: url(../imagenes/banner2.png);
+  background-size: cover;
   width: 70%;
   margin-right: auto;
   margin-left: auto;
+  padding: 4em;
+  border-radius: 1em;
+  -webkit-box-shadow: 5px 5px 15px 5px #DCA3AB;
+          box-shadow: 5px 5px 15px 5px #DCA3AB;
+}
+
+.row {
+  padding: 0.5em;
+}
+
+.form-control, .form-select {
+  font-family: 'Amatic SC', cursive;
+  background-color: rgba(241, 206, 241, 0.25);
+  border: 1px solid #a4ac94;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+}
+
+.span-form {
+  font-family: 'Amatic SC', cursive;
+  font-size: 1.2em;
+  letter-spacing: .1em;
+}
+
+.btn {
+  font-family: 'Amatic SC', cursive;
+  color: white;
+  letter-spacing: .2em;
+  background-color: #c68c64;
+  border-color: #d3ccc5;
+}
+
+.btn:hover {
+  background-color: #a4ac94;
 }
 /*# sourceMappingURL=style.css.map */

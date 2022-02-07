@@ -1,6 +1,40 @@
 .formulario-presupuesto{
+    background-image: url(../imagenes/banner2.png);
+    background-size: cover;
     width: 70%;
     margin-right: auto;
     margin-left: auto;
+    padding: 4em;
+    border-radius:1em; 
+    box-shadow: 5px 5px 15px 5px #DCA3AB;    
+}
 
+.row {
+    padding: 0.5em;
+}
+
+.form-control, .form-select {
+    font-family:'Amatic SC', cursive; 
+    background-color:rgba(241, 206, 241, 0.25);
+    border: 1px solid #a4ac94; 
+    text-transform: uppercase;
+    letter-spacing: .1em;
+}
+
+.span-form {
+    font-family:'Amatic SC', cursive; 
+    font-size: 1.2em;
+    letter-spacing: .1em;
+}
+
+.btn{
+    font-family:'Amatic SC', cursive; 
+    color: rgb(255, 255, 255);
+    letter-spacing: .2em;
+    background-color: $color-naranja;
+    border-color: $color-cemento;   
+}
+
+.btn:hover{
+    background-color: $color-verde;
 }

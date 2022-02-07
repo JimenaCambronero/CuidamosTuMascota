@@ -1,4 +1,5 @@
 console.log("hola");
+
 // Apertura de ventana para logueo
 
 const registro = document.querySelector('#registro');
@@ -143,26 +144,31 @@ $('#presupuesto').click(function (e) {
 
 if(cantidadMascotas <= 2 && cantidadPerros + cantidadGatos <= 2) {
   let resultadoPresupuesto = (parseInt(cantidadMascotas) * parseInt(precio)) * parseInt(totalDias)
-  // console.log(resultadoPresupuesto);
-  let datosFormulario = {
-    nombre: nombreDueño,
-    apellido: apellidoDueño,
-    email: emailDueño,
-    cantidadMascotas: cantidadMascotas,
-    perros: cantidadPerros,
-    gatos: cantidadGatos,
-    fechaInicio: fecha,
-    totalDias: totalDias,
-    presupuesto: resultadoPresupuesto,
+      datosFormulario = {
+      nombre: nombreDueño,
+      apellido: apellidoDueño,
+      email: emailDueño,
+      cantidadMascotas: cantidadMascotas,
+      perros: cantidadPerros,
+      gatos: cantidadGatos,
+      fechaInicio: fecha,
+      totalDias: totalDias,
+      presupuesto: resultadoPresupuesto,
   }
   
   localStorage.setItem('datosFormulario',JSON.stringify(datosFormulario)); dispData2();
+  
   
   function dispData2(){
     console.log (JSON.parse (localStorage.getItem('datosFormulario')));
     if (localStorage.getItem ('datosFormulario')){
       let {nombre, apellido, email, cantidadMascotas, perros, gatos, fechaInicio, totalDias, presupuesto} = JSON.parse(localStorage.getItem('datosFormulario'))
     }
+  }
+
+  for (let i = 0; i < localStorage.length; i++){
+    let datosFormulario = localStorage.key(i);
+    alert(`Hola! Podes revisar tus datos y enviarnos el siguiente mensaje por whatsApp: Mi nombre es ${nombreDueño} ${apellidoDueño} mi email ${emailDueño} quisiera saber disponibilidad para el cuidado de mi/s ${cantidadMascotas} -${cantidadPerros} ${cantidadGatos} mascota/a a partir del ${fecha} por un total de ${totalDias} dias, por el servicio se me ha cotizado un presupuestado total de ${resultadoPresupuesto} euros, quisiera seguir con la reserva.`);
   }
 
   } else{
