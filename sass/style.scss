@@ -7,6 +7,13 @@ $color-naranja: #c68c64;
 $color-naranjalight: #e7b69d;
 $color-celeste:#b5d7dc; 
 $color-verde: #a4ac94; 
+$color-amarillo:#f2e1af;
+
+//colores fondos
+$color-rosafondo:#e9d9db;
+$color-celestefondo:#dae7e9;
+$color-amarillofondo:#f1ead6;
+$color-naranjafondo: #ecd9cf;
 
 
 @mixin mix ($font-size, $letter-spacing){
@@ -22,7 +29,8 @@ $color-verde: #a4ac94;
 @import "servicios";
 @import "formularioregistro";
 @import "formulariopresupuesto";
-
+@import "carrito";
+@import "footer";
 
 
 

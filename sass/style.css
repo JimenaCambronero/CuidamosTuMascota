@@ -7,7 +7,7 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: white;
+  background-color: #a3aab1;
   width: 100%;
 }
 
@@ -52,8 +52,10 @@ header label .fa-2x:hover {
 
 .menu ul li a {
   display: block;
-  color: grey;
-  font-size: 1.3em;
+  font-family: 'Amatic SC', cursive;
+  color: black;
+  font-size: 1.4em;
+  letter-spacing: 0.1em;
   padding: 0.5em 1rem;
   text-decoration: none;
   -webkit-transition: all 0.4s linear;
@@ -247,10 +249,11 @@ button:hover {
           animation-delay: 2.5s;
   -webkit-animation-duration: 4s;
           animation-duration: 4s;
+  background-color: #f1ead6;
 }
 
 .intro-testimonios {
-  padding: 5em 5em 10em;
+  padding: 5em;
 }
 
 .titulo-testimonios {
@@ -289,8 +292,17 @@ button:hover {
   color: #a4ac94;
 }
 
+.estadia {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  background-color: #dae7e9;
+}
+
 .contenedor-estadia {
   padding: 5em 5em 10em;
+  background-color: #dae7e9;
 }
 
 .reservar-estadia {
@@ -307,13 +319,6 @@ button:hover {
   font-size: 1.2em;
   letter-spacing: 0.1em;
   font-weight: normal;
-}
-
-.estadia {
-  -webkit-animation-delay: 0.3s;
-          animation-delay: 0.3s;
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s;
 }
 
 .tarjetas-aleatorias {
@@ -337,7 +342,7 @@ button:hover {
 
 .titulo-tj {
   font-family: 'Amatic SC', cursive;
-  font-size: 2.5em;
+  font-size: 1.5em;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   text-align: center;
@@ -357,7 +362,7 @@ button:hover {
 }
 
 .resultado {
-  background-color: #dbd4d4;
+  background-color: #f7d9d9;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -368,8 +373,8 @@ button:hover {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 10px;
-  height: 400px;
-  width: 300px;
+  height: 300px;
+  width: 200px;
 }
 
 .resultado img {
@@ -391,15 +396,19 @@ button:hover {
           justify-content: center;
 }
 
+.texto-tj {
+  font-family: 'Amatic SC', cursive;
+}
+
 .boton-gato, .boton-perro {
-  background-color: #99c04a;
+  background-color: #a4ac94;
   border: 0;
   border-radius: 4px;
   color: #fff;
-  font-size: 18px;
+  font-size: 12px;
   padding: 10px;
   margin: 10px;
-  width: 300px;
+  width: 200px;
 }
 
 .contenedor-servicios {
@@ -408,6 +417,7 @@ button:hover {
           animation-delay: 2.5s;
   -webkit-animation-duration: 4s;
           animation-duration: 4s;
+  background-color: #e9d9db;
 }
 
 .titulo-servicios {
@@ -470,6 +480,7 @@ button:hover {
   border-radius: 23px;
   font-size: 0.5em;
   padding: 0.5em 2em;
+  background-color: #f2e1af;
 }
 
 .contenido-saber {
@@ -492,11 +503,6 @@ button:hover {
   z-index: 4;
 }
 
-.container-form {
-  background-color: #d3ccc5;
-  border-radius: 4px;
-}
-
 .container-formulario {
   height: 100vh;
   display: -webkit-box;
@@ -512,6 +518,8 @@ button:hover {
 }
 
 .container-form {
+  background-color: #d3ccc5;
+  border-radius: 4px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -700,5 +708,277 @@ button:hover {
 
 .btn:hover {
   background-color: #a4ac94;
+}
+
+.d-none {
+  display: none;
+}
+
+.modal-formulario {
+  background-color: rgba(0, 0, 0, 0.719);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 4;
+}
+
+.contenedor-formulario {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: 'Amatic SC', cursive;
+}
+
+.contenedor-modal {
+  background-color: #d3ccc5;
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-transition: all .5s ease-out;
+  transition: all .5s ease-out;
+}
+
+.cerrar-form {
+  padding: 10px;
+}
+
+.mensaje h2 {
+  font-size: 1.7rem;
+  padding: 1rem 0;
+}
+
+.mensaje {
+  padding: 1rem;
+}
+
+.boton-mensaje {
+  padding: 1rem;
+  font-size: 1em;
+  font-weight: 400;
+  letter-spacing: 0.5em;
+  background-color: #00bb2d;
+  border-radius: 2rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin-top: 2rem;
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+  color: white;
+}
+
+.tienda-chiches {
+  padding: 5em 10em 0 10em;
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  background-color: #ecd9cf;
+}
+
+.titulo-tienda {
+  font-family: 'Amatic SC', cursive;
+  font-size: 2.5em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 2em 0 1em;
+  text-align: center;
+}
+
+.texto-tienda {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2em;
+  letter-spacing: 0.1em;
+  font-weight: normal;
+}
+
+.card {
+  border: 3px solid #e7b69d;
+}
+
+.card-body {
+  background-color: #a4ac94;
+}
+
+.card-title {
+  font-family: 'Amatic SC', cursive;
+  letter-spacing: 0.1em;
+  text-align: center;
+}
+
+.card-text {
+  font-size: 1.4em;
+  text-align: center;
+}
+
+.carrito-titulo {
+  font-family: 'Amatic SC', cursive;
+  font-size: 1.5em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 2em 0 1em;
+  text-align: center;
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: #dca3ab;
+  cursor: pointer;
+}
+
+.table {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  letter-spacing: 0.1em;
+  width: 70%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 0;
+}
+
+/* -------------------------------Estilo FOTTER---------------------------- */
+.contenedor-footer {
+  background-color: #a3aab1;
+  padding: 2em 4em 1em;
+}
+
+.columna-footer {
+  width: 100%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer-col {
+  width: 33%;
+  padding: 0 1em;
+}
+
+.footer-col h5 {
+  font-size: 1.4em;
+  color: black;
+  margin-bottom: 1.2em;
+  font-family: 'Courier New', Courier, monospace;
+  position: relative;
+}
+
+.footer-col h5::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.3em;
+  background-color: #dca3ab;
+  height: 0.2em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 2.5em;
+}
+
+.footer-col ul li :not(:last-child) {
+  margin-bottom: 1.5em;
+}
+
+.footer-col ul li a {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.2em;
+  text-decoration: none;
+  padding: 0.1em;
+  color: black;
+  display: block;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  color: #a4ac94;
+  padding-left: 0.6em;
+}
+
+.footer-col .links-redes li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.footer-col .links-redes a {
+  font-size: 1em;
+  margin: 0.5em;
+  text-align: center;
+  color: black;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.footer-col .links-redes a:hover {
+  color: #a4ac94;
+}
+
+.contenedor-copy {
+  background-color: #d3ccc5;
+}
+
+.copy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 3em;
+}
+
+p.copy-parrafo {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.8em;
+  letter-spacing: 0.1em;
+  color: black;
+  padding-top: 1em;
+  margin-bottom: 0.1em;
+}
+
+.menu-footer a:hover {
+  color: #b5d7dc;
+}
+
+.copy-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.copy-links a {
+  font-size: 1.2em;
+  color: black;
+  margin: 0 0.5em;
 }
 /*# sourceMappingURL=style.css.map */

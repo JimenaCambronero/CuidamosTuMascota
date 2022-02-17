@@ -32,9 +32,72 @@
     color: rgb(255, 255, 255);
     letter-spacing: .2em;
     background-color: $color-naranja;
-    border-color: $color-cemento;   
+    border-color: $color-cemento;  
+    
 }
 
 .btn:hover{
-    background-color: $color-verde;
+    background-color: $color-verde;   
 }
+
+
+// estilos ventana presupuesto
+.d-none {
+    display: none;
+}
+
+.modal-formulario {
+    background-color: rgba(0, 0, 0, 0.719);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 4;
+}
+
+
+.contenedor-formulario{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Amatic SC', cursive;
+}
+
+.contenedor-modal{
+    background-color: $color-cemento;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-around;
+    transition: all .5s ease-out;
+}
+
+.cerrar-form {
+    padding: 10px;
+}
+
+.mensaje h2 {
+    font-size: 1.7rem;
+    padding: 1rem 0;
+}
+
+.mensaje {
+    padding: 1rem;
+}
+
+.boton-mensaje{
+    padding: 1rem;
+    font-size: 1em;
+    font-weight: 400;
+    letter-spacing: 0.5em;
+    background-color: #00bb2d ;
+    border-radius: 2rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-top: 2rem;
+    transition: all .3s ease-in;
+    color: rgb(255, 255, 255);
+}
+

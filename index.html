@@ -124,9 +124,8 @@
       <div class="contenedor-estadia" id="reservas">
           <h3 class="reservar-estadia" id="reservar-estadia">Reserva una Estadía con nosotros</h3>
           <div id="intro-reservas"> <!-- se agrega texto con JS --></div>
-            <button id="button">Saber Más</button>
       </div>
-
+<!-- formulario presupuesto -->
     <div>
       <form id="formulario-presupuesto" class="formulario-presupuesto" method="post" action="">
         <div class="row g-2">
@@ -144,8 +143,7 @@
               <div class="col-md-6">
                 <input type="password" id="contraseña-dueño" class="form-control" placeholder="Contraseña">
               </div>
-        </div>
-            
+        </div>         
         <div class="row g-3">
               <div class="col-md-2">
                 <input type="text" id='cantidad-mascotas'class="form-control" placeholder="Total mascotas (en N°)">
@@ -172,29 +170,41 @@
               <div class="col-md-3">
                 <input type="date" id="fecha" class="form-control" name="fecha">
               </div>
-            </div>
+        </div>
               <div class="row g-3">
-              <div class="col-md-6">
-                <input type="text" id="total-dias" class="form-control" placeholder="Cantidad de dias bajo cuidado (en numeros)">
+                  <div class="col-md-6">
+                      <input type="text" id="total-dias" class="form-control" placeholder="Cantidad de dias bajo cuidado (en numeros)">
+                  </div>
+                  <div class="col-md-3">
+                      <button type="button" id="presupuesto" name= "boton1" value="presupuesto" class="btn">Presupuestar y Consultar</button>
+                  </div>
+                  <div class="col-md-3">
+                      <button type="button" id="limpiar-formulario" name="boton2" value="limpiar" class="btn">Limpiar Formulario</button>
+                  </div> 
               </div>
-              <div class="col-md-3">
-                <button type="submit" id="presupuesto" name= "boton1" value="presupuesto" class="btn">Presupuestar y Consultar</button>
-              </div>
-              <div class="col-md-3">
-                <button type="submit" id="consulta" name="boton2" value="reset" class="btn">Limpiar Formulario</button>
-              </div> 
-            </div>
         </div>
     </form>
+    <div class="modal-formulario d-none" id="modal-formulario">
+        <div class="contenedor-formulario" >
+              <div class="contenedor-modal" id="contenedor-modal">
+                <p class="cerrar-form" id="cerrar-form">Cerrar</p>
+                      <div class="mensaje">
+                          <h2 class="mensaje">Gracias por intesarte en nuestros servicios</h2>
+                          <p class="mensaje">Aqui vas a poder ver y confirmar los datos cargados en el Formulario, podemos seguir comunicandonos via whatsapp si queres confirmar la reserva.</p>
+                          <button class="boton-mensaje" id="boton-mensaje">Seguir RESERVA por whatsapp</button>
+                      </div>
+              </div>
+          </div>
     </div>
+    
     <div class="tarjetas-aleatorias">
       <h3 class="titulo-tj"> Si te gustan las mascotas no dejes de mirar esta coleccion de imagenes</h3>
         <div class="resultados">
           <div id="gato-resultado" class="resultado">
-            <p>Click en el boton de abajo para ver 🐱</p>
+            <p class="texto-tj">  Click en el boton de abajo para ver 🐱</p>
           </div>
           <div id="perro-resultado" class="resultado">
-            <p>Click en el boton de abajo para ver 🐶</p>
+            <p class="texto-tj">Click en el boton de abajo para ver 🐶</p>
           </div>
         </div>
         
@@ -330,12 +340,72 @@
       </div>
     </div>
   </div>
+  </section>
+  <section id="tiendaChiches" class="tienda-chiches">
+    <h3 class="titulo-tienda">Podes comprar un chiche</h3>
+    <p class="texto-tienda"> Tenemos una pequeña tienda, podes comprar el chiche que quieras para que tu mascota disfrute durante su estadía con nosotros y para que lo siga disfrutando en su casa.</p>
+    <div class="container">
+      <div class="row" id="contenedor-productos"></div>
+    </div>
+  <template id="template-productos"> 
+    <div class="col-12 col-md-3">
+      <div class="card">
+        <img src="" class="card-img-top" alt="juego perro">
+        <div class="card-body">
+          <h5 class="card-title">Juego para perro</h5>
+          <p class="card-text">€<span>2</span></p>
+          <button class="btn btn-primary">Comprar</button>
+        </div>
+      </div>
+    </div>
+  </template>
+<!-- carrito -->
 
+<div class="mt-5">
+  <h4 class="carrito-titulo">Carrito</h4>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Item</th>
+        <th scope="col">Cantidad</th>
+        <th scope="col">Acción</th>
+        <th scope="col">Total</th>
+      </tr>
+    </thead>
+    <tbody id="items"></tbody>
+    <tfoot>
+      <tr id="footer-carrito" class="footer-carrito">
+        <th scope="row" colspan="5">Tu carrito esta vacío! Comprá un chiche!</th>
+      </tr>
+    </tfoot>
+  </table>
+</div>
+<template id="template-footer">
+  <th scope="row" colspan="2">Total Productos</th>
+  <td>10</td>
+  <td>
+    <button class="btn btn-danger btn-sm" id="vaciar-carrito">Vaciar</button>
+  </td>
+  <td class="font-weight-bold">€ <span>4</span></td>
+</template>
+<template id="template-carrito">
+  <tr>
+    <th scope="row">id</th>
+    <td>Juego para perros</td>
+    <td>1</td>
+    <td>
+      <button class="btn btn-info btn-sm">+</button>
+      <button class="btn btn-danger btn-sm">-</button>
+    </td>
+    <td>€<span>3</span></td>
+  </tr>
+</template>
   </section>
 
   <section id="contenedor-servicios" class="contenedor-servicios">
-    <h3 class="titulo-servicios">Servicios que ofrecemos.</h3>
-    <h4 class="subtitulo-servicios">En esta sección vas a encontrar los servicios que ofrece <span>Cuidamos a tu Mascota</span> tambien podes comunicarte con nosotros en caso de que requieras alguno en especial y que no se encuentre disponible en la página</h4> 
+    <h4 class="titulo-servicios">Servicios que ofrecemos.</h4>
+    <h3 class="subtitulo-servicios">En esta sección vas a encontrar los servicios que ofrece <span>Cuidamos a tu Mascota</span> tambien podes comunicarte con nosotros en caso de que requieras alguno en especial y que no se encuentre disponible en la página</h3> 
     <p class="mas-mascotas" id="masMacotas"> 
       <!-- texto agregago con JS -->
     </p>
@@ -369,18 +439,58 @@
 
 <!-- footer -->
 <footer>
-    <div class="copyright">
-        <p>© 2021 CUIDAMOS TU MASCOTA. Todos los derechos reservados.<span>Desarrollado con <span class="heart">💜</span> por Jimena G. Cambronero.</span></p>
-        <div class="footer-social">
-            <a href="https://github.com/JimenaCambronero"><i class="fab fa-github"></i></i></a>
-            <a href="hhttps://www.linkedin.com/in/jimena-gisele-cambronero/"><i class="fab fa-linkedin-in"></i></a>
+  <div class="contenedor-footer">
+      <div class="columna-footer">
+        <div class="footer-col">
+            <h5 class="titulo-footer"> Menu</h5>
+              <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="#sobrenosotros">Sobre Nosotros</a></li>
+                  <li><a href="#reservas">Reservas</a></li>
+                  <li><a href="#testimonios">Testimonios</a></li>
+                  <li><a href="#servicios">Servicios</a></li>
+                  <li><a href="#registro" id="registro">Registro</a></li>
+              </ul>
         </div>
+        <div class="footer-col"> 
+          <h5>Contactanos</h5>
+            <div class="links-redes">
+              <ul>
+                <li><a href="https://www.instagram.com/cuidamos_tu_mascota/?hl=es-la" target="_blank"><i class="fab fa-instagram"></i> Seguinos en Instagram. </a></li>
+                <li><a href="https://wa.me/34747480111" target="_blank"><i class="fab fa-whatsapp"></i> Podes enviarnos un Whatsapp. </a></li>
+                <li><a href="mailto:cuidamosatumascota@gmail.com" target="_blank"><i class="far fa-envelope"></i> Envianos un E-mail. </a></li>
+              </ul>
+            </div>
+      </div>
     </div>
-</footer> 
+
+  <!-- inicio COPY -->
+  <div class="contenedor-copy">
+      <div class="copy">
+        <p class="copy-parrafo"> <i class="fas fa-copyright"></i> 2021 CUIDAMOS TU MASCOTA. Todos los derechos reservados.  <span>Desarrollado con <span class="heart">💜</span> por Jimena G. Cambronero.</span></p></p>
+      </div> 
+      <div class="copy-links"> 
+        <a href="https://github.com/JimenaCambronero" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/jimena-gisele-cambronero/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      </div>
+  </div>
+  <!-- fin COPY -->
+</footer>   
+     
+ 
  
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-<script src="./codigo.js"></script> 
+<!-- <script src="./codigo.js"></script>  -->
+<script src="./codigo.js/loguinybanner.js"></script> 
+<script src="./codigo.js/reservasyformulario.js"></script> 
+<script scr="./modalreserva.js"></script>
+<script src="./codigo.js/apifotos.js"></script> 
+<script src="./codigo.js/testimonios.js"></script> 
+<script src="./codigo.js/carrito.js"></script> 
+<script src="./codigo.js/masservicios.js"></script>
+
+
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
     AOS.init();

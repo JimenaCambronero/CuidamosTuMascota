@@ -12,10 +12,6 @@
     z-index: 4;
 }
 
-.container-form{
-    background-color: $color-cemento;
-    border-radius: 4px;
-}
 
 .container-formulario {
     height: 100vh;
@@ -25,7 +21,9 @@
     font-family: 'Amatic SC', cursive;
 }
 
-.container-form {
+.container-form{
+    background-color: $color-cemento;
+    border-radius: 4px;
     display: flex;
     justify-content: space-around;
     transition: all .5s ease-out;

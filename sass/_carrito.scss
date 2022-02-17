@@ -1,0 +1,69 @@
+.tienda-chiches{
+    padding: 5em 10em 0 10em;
+    animation-delay: 0.3s;
+    animation-duration: 4s;
+    background-color: $color-naranjafondo;
+}
+
+.titulo-tienda{
+    font-family: 'Amatic SC', cursive;
+    font-size: 2.5em;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;  
+    padding: 2em 0 1em;
+    text-align: center;
+}
+
+.texto-tienda{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+    letter-spacing: 0.1em;
+    font-weight: normal;
+}
+
+.card{
+    border: 3px solid $color-naranjalight;
+    
+}
+
+.card-body{
+    background-color: $color-verde;
+}
+
+.card-title{
+    font-family: 'Amatic SC', cursive;
+    letter-spacing: 0.1em;
+    text-align: center;
+}
+
+.card-text{
+    font-size: 1.4em;
+    text-align: center;
+}
+
+.carrito-titulo{
+    font-family: 'Amatic SC', cursive;
+    font-size: 1.5em;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;  
+    padding: 2em 0 1em;
+    text-align: center;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: $color-rosa;
+    cursor: pointer;      
+}
+
+.table{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    letter-spacing: 0.1em;
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 0;
+}
+
+

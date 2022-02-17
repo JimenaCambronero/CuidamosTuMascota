@@ -7,7 +7,7 @@
 
 body{
     font-family: 'Roboto', sans-serif;
-    background-color: rgb(255, 255, 255);
+    background-color: #a3aab1;
     width: 100%;
 }
 
@@ -49,8 +49,10 @@ header label .fa-2x:hover{
 
 .menu ul li a {
     display: block;
-    color:grey;
-    font-size: 1.3em ;
+    font-family:'Amatic SC', cursive;
+    color:black;
+    font-size: 1.4em;
+    letter-spacing: 0.1em;
     padding: 0.5em 1rem;
     text-decoration: none;
     transition: all 0.4s linear;

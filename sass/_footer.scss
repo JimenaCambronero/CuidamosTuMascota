@@ -1,0 +1,111 @@
+
+/* -------------------------------Estilo FOTTER---------------------------- */
+
+.contenedor-footer{
+    background-color: #a3aab1;
+    padding: 2em 4em 1em; 
+}
+
+.columna-footer{
+    width: 100%;
+    margin:auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer-col{
+    width: 33%;
+    padding: 0 1em;
+}
+
+.footer-col h5 {
+    font-size: 1.4em;
+    color: rgb(0, 0, 0);
+    margin-bottom: 1.2em;
+    font-family: 'Courier New', Courier, monospace;
+    position: relative;
+}
+
+.footer-col h5::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -0.3em;
+    background-color: $color-rosa;
+    height: 0.2em;
+    box-sizing: border-box;
+    width: 2.5em;
+}
+.footer-col ul li :not(:last-child){
+    margin-bottom: 1.5em;
+}
+.footer-col ul li a{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2em;
+    text-decoration: none;
+    padding: 0.1em;
+    color: rgb(0, 0, 0);
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover{
+    color: $color-verde;
+    padding-left: 0.6em;
+}
+
+.footer-col .links-redes li{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-col .links-redes a{
+    font-size: 1em;
+    margin: 0.5em;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    transition: all 0.5s ease;
+}
+
+.footer-col .links-redes a:hover{
+    color: $color-verde;
+}
+
+.contenedor-copy{
+    background-color: $color-cemento;   
+}
+
+.copy{
+    display: flex;
+    justify-content: center;
+    margin-top: 3em;
+}
+
+p.copy-parrafo {
+    font-family:'Courier New', Courier, monospace;
+    font-size: 0.8em;
+    letter-spacing: 0.1em;
+    color: black;
+    padding-top: 1em;
+    margin-bottom: 0.1em;
+}
+
+.menu-footer a:hover{
+    color: $color-celeste
+} 
+
+.copy-links{
+    display: flex;
+    justify-content: center;
+        a{
+        font-size: 1.2em;
+        color: rgb(0, 0, 0);
+        margin: 0 0.5em;
+    }
+}

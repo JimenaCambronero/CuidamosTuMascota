@@ -1,0 +1,33 @@
+[
+    {
+        "precio": 4,
+        "id": 1,
+        "titulo": "Soga con dos nudos, ideal para perros activos",
+        "png":"./imagenes/juguetesmascotas/jugueteperro.jpg" 
+        
+    },
+
+    {
+        "precio": 8,
+        "id": 2,
+        "titulo": "Kit de Juguetes para cuando vamos a la plaza",
+        "png":"./imagenes/juguetesmascotas/kitplazaperro.jpg"
+    
+    },
+
+    {
+        "precio": 6,
+        "id": 3,
+        "titulo": "Juguete eléctrico para gatos, simulación de pez.",
+        "png":"./imagenes/juguetesmascotas/pezgato.jpg"
+
+        
+    },
+
+    {
+        "precio": 2,
+        "id": 4,
+        "titulo": "Ratita de pana. Estimula los sentidos de tu gatito.",
+        "png":"./imagenes/juguetesmascotas/ratitasgato.png"
+    }
+]

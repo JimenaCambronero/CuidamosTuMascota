@@ -1,5 +1,12 @@
+.estadia{
+    animation-delay: 0.3s;
+    animation-duration: 4s;
+	background-color: $color-celestefondo;
+}
+
 .contenedor-estadia{
     padding: 5em 5em 10em;
+	background-color: $color-celestefondo;
 }
 
 .reservar-estadia{
@@ -18,13 +25,11 @@
     font-weight: normal;
 }
 
-.estadia{
-    animation-delay: 0.3s;
-    animation-duration: 4s;
-}
+
 
 
 // tarjetas aleatorias
+
 
 .tarjetas-aleatorias{
 	font-family: 'Open Sans', sans-serif;
@@ -38,7 +43,7 @@
 
 .titulo-tj{
     font-family: 'Amatic SC', cursive;
-    font-size: 2.5em;
+    font-size: 1.5em;
     letter-spacing: 0.1em;
     text-transform: uppercase;  
     text-align: center;
@@ -52,13 +57,13 @@
 }
 
 .resultado {
-	background-color: rgb(219, 212, 212);
+	background-color: rgb(247, 217, 217);
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	margin: 10px;
-	height: 400px;
-	width: 300px;
+	height: 300px;
+	width: 200px;
 }
 
 .resultado img {
@@ -72,15 +77,18 @@
 	align-items: center;
 	justify-content: center;
 }
+.texto-tj{
+	font-family: 'Amatic SC', cursive;
+}
 
 .boton-gato, .boton-perro{
-	background-color: rgb(153, 192, 74);
+	background-color: $color-verde;
 	border: 0;
 	border-radius: 4px;
 	color: #fff;
-	font-size: 18px;
+	font-size: 12px;
 	padding: 10px;
 	margin: 10px;
-	width: 300px;
+	width: 200px;
 }
 
