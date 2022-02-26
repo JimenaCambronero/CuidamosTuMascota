@@ -7,8 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">  
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <!-- movimientos -->
-    <link
-    rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css"/>
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css"/>
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- enlace bootstrap -->
@@ -184,14 +183,15 @@
               </div>
         </div>
     </form>
-    <div class="modal-formulario d-none" id="modal-formulario">
+    <div class="modal-formulario" id="modal-formulario">
         <div class="contenedor-formulario" >
               <div class="contenedor-modal" id="contenedor-modal">
-                <p class="cerrar-form" id="cerrar-form">Cerrar</p>
-                      <div class="mensaje">
-                          <h2 class="mensaje">Gracias por intesarte en nuestros servicios</h2>
-                          <p class="mensaje">Aqui vas a poder ver y confirmar los datos cargados en el Formulario, podemos seguir comunicandonos via whatsapp si queres confirmar la reserva.</p>
-                          <button class="boton-mensaje" id="boton-mensaje">Seguir RESERVA por whatsapp</button>
+                <p class="cerrar-form" id="cerrar-ventana">Cerrar</p>
+                      <div class="mensaje-contenedor" id="mensaje-contenedor">
+                          <h2 class="mensaje-titulo" id="mensaje-titulo">Gracias por intesarte en nuestros servicios</h2>
+                      </div>
+                      <div>
+                          <a class="boton-mensaje" id="boton-mensaje" href="https://wa.me/34747480111" target="_blank"><i class="fab fa-whatsapp fa-2x"></i>Contactate por Whatsapp </a>
                       </div>
               </div>
           </div>
@@ -235,9 +235,9 @@
                   <div class="col-md-7 order-md-0">
                     <figure class="mx-auto mb-0" style="max-width: 500px;">
                       <blockquote class="blockquote mb-0">
-                        <p class="testimonio mb-5"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore ut omnis dolores. Accusamus, quas. Tempore expedita, tenetur voluptatibus sapiente saepe esse assumenda eos recusandae officia voluptatem eveniet itaque modi quis?</p>
+                        <p class="testimonio mb-5">Sabrina y Mauro han sido muy cariñosos con nuestro perro y se han amoldado perfectamente a nuestras necesidades y horarios. Sin duda los recomiendo y repetiremos con ella siempre que lo necesitemos.</p>
                       </blockquote>
-                      <figcaption class="blockquote-footer text-xs mb-0"> Pedro Perez. Madrid</figcaption>
+                      <figcaption class="blockquote-footer text-xs mb-0"> Amparo. Madrid</figcaption>
                     </figure>
                   </div>
                 </div>
@@ -252,9 +252,9 @@
                   <div class="col-md-7 order-md-0">
                     <figure class="mx-auto mb-0" style="max-width: 500px;">
                       <blockquote class="blockquote mb-0">
-                        <p class="testimonio mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quidem voluptatum voluptates minus dignissimos. Aliquid voluptas voluptatibus rem molestiae recusandae odio? Cumque saepe incidunt sequi. Ipsam magnam dolore accusamus voluptatum!</p>
+                        <p class="testimonio mb-5"> Ringo se ha pasado unos días super felices con los chicos. Gracias por cuidarlo y darle tanto amor! Los super recomendamos y sin pensarlo volveríamos a dejarlo bajo su cuidado.</p>
                       </blockquote>
-                      <figcaption class="blockquote-footer text-xs mb-0"> sJuan Perez. Madrid</figcaption>
+                      <figcaption class="blockquote-footer text-xs mb-0"> Juan Perez. Madrid</figcaption>
                     </figure>
                   </div>
                 </div>
@@ -269,9 +269,9 @@
                   <div class="col-md-7 order-md-0">
                     <figure class="mx-auto mb-0" style="max-width: 500px;">
                       <blockquote class="blockquote mb-0">
-                        <p class="testimonio mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia dolorum iusto ea reiciendis nobis molestiae quam, aliquid eos deleniti, fuga sapiente! Fugit quisquam corporis, tempora repellat voluptate maiores laboriosam doloremque!</p>
+                        <p class="testimonio mb-5">Muchas gracias por cuidar tan bien a Nilo! Que decir de la profesionalidad y el trato de Sabrina y Mauro que no hayan dicho otras personas en las reseñas ya publicadas. Puntuales, amables y atentos. En resúmen, 100% recomendables.</p>
                       </blockquote>
-                      <figcaption class="blockquote-footer text-xs mb-0"> Juan Perez. Madrid</figcaption>
+                      <figcaption class="blockquote-footer text-xs mb-0"> Mamá de Nilo. Madrid</figcaption>
                     </figure>
                   </div>
                 </div>
@@ -286,9 +286,9 @@
                   <div class="col-md-7 order-md-0">
                     <figure class="mx-auto mb-0" style="max-width: 500px;">
                       <blockquote class="blockquote mb-0">
-                        <p class="testimonio mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit quibusdam ipsum ullam, commodi magnam, fugiat eaque voluptates quos illo a quasi recusandae reiciendis obcaecati accusamus nam sunt itaque! Itaque, omnis.</p>
+                        <p class="testimonio mb-5">"Los mejores cuidadores que existen. Ha sido maravilloso ver como estaba Tim cuando lo he recogido, no se separaba de ellos. Mil gracias por cuidarlo y hacerlo sentir como en casa. Tiene un estupendo estado de ánimo, ha llegado a casa y como si no hubiera estado afuera".</p>
                       </blockquote>
-                      <figcaption class="blockquote-footer text-xs mb-0"> Juan Perez. Madrid</figcaption>
+                      <figcaption class="blockquote-footer text-xs mb-0"> Papá de Tim. Madrid</figcaption>
                     </figure>
                   </div>
                 </div>
@@ -303,9 +303,9 @@
                 <div class="col-md-7 order-md-0">
                   <figure class="mx-auto mb-0" style="max-width: 500px;">
                     <blockquote class="blockquote mb-0">
-                      <p class="testimonio mb-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus consequatur atque possimus sequi, necessitatibus reprehenderit excepturi pariatur dolorum non, magni vel dignissimos ratione cupiditate deleniti perspiciatis id quo perferendis voluptatem.</p>
+                      <p class="testimonio mb-5">Muchas gracias por cuidar a Simón con tanto amor y dedicación. Los recomiendo! Son muy atentos y te mantienen informado de todo acerca de tu mascota.</p>
                     </blockquote>
-                    <figcaption class="blockquote-footer text-xs mb-0"> Juan Perez. Madrid</figcaption>
+                    <figcaption class="blockquote-footer text-xs mb-0"> Rebecca. Madrid</figcaption>
                   </figure>
                 </div>
               </div>
@@ -315,14 +315,14 @@
             <div class="w-100">
               <div class="row align-items-center justify-content-center">
                 <div class="col-8 col-md-3 order-md-1">
-                  <img class="img-fluid mb-5 mb-md-0" src="./imagenes/mascotas/6moralabrador-min.jpg" alt="imagen alumno 4">
+                  <img class="img-fluid mb-5 mb-md-0" src="./imagenes/mascotas/6moralabrador-min.jpg" alt="imagen perro 4">
                 </div>
                 <div class="col-md-7 order-md-0">
                   <figure class="mx-auto mb-0" style="max-width: 500px;">
                     <blockquote class="blockquote mb-0">
-                      <p class="testimonio mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae modi eligendi totam molestias, veritatis velit officiis, corporis error cum nesciunt deserunt aliquam illo alias animi exercitationem ipsum ut id perspiciatis.</p>
+                      <p class="testimonio mb-5">Hola chicos!!! Gracias por cuidar a Morita. Desde el primer minuto mora se tiró encima para darle muchos mimos a Sabri. Ella es un amor, transmite mucha confianza y se nota que ama a los peluditos. Seguro volveremos.</p>
                     </blockquote>
-                    <figcaption class="blockquote-footer text-xs mb-0"> Juan Perez. Madrid</figcaption>
+                    <figcaption class="blockquote-footer text-xs mb-0"> Natalia. Madrid</figcaption>
                   </figure>
                 </div>
               </div>
@@ -344,11 +344,11 @@
   <section id="tiendaChiches" class="tienda-chiches">
     <h3 class="titulo-tienda">Podes comprar un chiche</h3>
     <p class="texto-tienda"> Tenemos una pequeña tienda, podes comprar el chiche que quieras para que tu mascota disfrute durante su estadía con nosotros y para que lo siga disfrutando en su casa.</p>
-    <div class="container">
+    <div class="container-cards">
       <div class="row" id="contenedor-productos"></div>
     </div>
   <template id="template-productos"> 
-    <div class="col-12 col-md-3">
+    <div class="col-8 col-md-3 order-md-1">
       <div class="card">
         <img src="" class="card-img-top" alt="juego perro">
         <div class="card-body">
@@ -405,36 +405,30 @@
 
   <section id="contenedor-servicios" class="contenedor-servicios">
     <h4 class="titulo-servicios">Servicios que ofrecemos.</h4>
-    <h3 class="subtitulo-servicios">En esta sección vas a encontrar los servicios que ofrece <span>Cuidamos a tu Mascota</span> tambien podes comunicarte con nosotros en caso de que requieras alguno en especial y que no se encuentre disponible en la página</h3> 
+    <h3 class="subtitulo-servicios">En esta sección vas a encontrar los servicios que ofrece <span>Cuidamos a tu Mascota</span> tambien podes comunicarte con nosotros en caso de que requieras alguno en especial y que no se encuentre disponible en la página.</h3> 
     <p class="mas-mascotas" id="masMacotas"> 
       <!-- texto agregago con JS -->
     </p>
 
     <div class="servicios" id="servicios">
       <div class="servicio">
-        <img src="./imagenes/servicios/house.png" alt="hospedaje">
-          <p class="descripcion">Alojamiento</p>  
-          <button class="boton-saber" id="boton-saber"> Saber más</button>
-          <p class="contenido-saber d-none" id="contenido-saber">Aqui vas a encontrar la descripcion de cada uno de los servicio que se ven ofrecidos previamente</p>
-
-        <img src="./imagenes/servicios/parque.png" alt="paseo">
-          <p class="descripcion">Paseo</p> 
-          <button class="boton-saber" id="boton-saber"> Saber más</button>
-          <p class="contenido-saber d-none" id="contenido-saber">Aqui vas a encontrar la descripcion de cada uno de los servicio que se ven ofrecidos previamente</p>
+              <img src="./imagenes/servicios/house.png" alt="hospedaje">
+                <p class="descripcion">Alojamiento</p>  
+                <button class="boton-saber" id="boton-saber"> Saber más</button>
+                <p class="contenido-saber d-none" id="contenido-saber">Tu mascota se sentirá como en s casa, no usamos caniles, disfrutan de las comodidas de la casa.</p>
+      </div>   
+      <div class="servicio">
+              <img src="./imagenes/servicios/parque.png" alt="paseo">
+                <p class="descripcion">Paseo</p> 
+                <button class="boton-saber" id="boton-saber"> Saber más</button>
+                <p class="contenido-saber d-none" id="contenido-saber">Tambien ofrecemos servios sólo de paseos. Consultanos enviandonos un Mensaje.</p>
       </div>
-
-      <div class="servicio">  
-        <img src="./imagenes/servicios/comida.png" alt="alimento">
-          <p class="descripcion">Alimento</p>
-          <button class="boton-saber" id="boton-saber"> Saber más</button>
-          <p class="contenido-saber d-none" id="contenido-saber">Aqui vas a encontrar la descripcion de cada uno de los servicio que se ven ofrecidos previamente</p>   
-
-          <img src="./imagenes/servicios/chat.png" alt="chat">
-          <p class="descripcion">Comunicación constante</p>   
-          <button class="boton-saber" id="boton-saber"> Saber más</button>
-          <p class="contenido-saber d-none" id="contenido-saber">Aqui vas a encontrar la descripcion de cada uno de los servicio que se ven ofrecidos previamente</p>
-      </div>
-    </div>
+      <div class="servicio">
+            <img src="./imagenes/servicios/chat.png" alt="chat">
+            <p class="descripcion">Comunicación </p>   
+            <button class="boton-saber" id="boton-saber"> Saber más</button>
+            <p class="contenido-saber d-none" id="contenido-saber">Estaremos en contacto permanentemente, te eviamos mensajes, fotos y videos de tu mascota disfrutando su estadia.</p>
+      </div>    
   </section>  
 
 <!-- footer -->
@@ -463,7 +457,19 @@
             </div>
       </div>
     </div>
-
+    <div>
+    <button class="open-boton" id="abrir-boton">Charlemos por Aquí!🙋‍♀️</button>
+    <div class="chat-popup" id="abrir-chat">
+        <form class="form-chat-contenedor">
+            <h5 class="mensaje-chat">Hola!!!🙋‍♀️ </h5>
+            <label for="msg" class="mensaje-chat">Envianos tu consulta</label>
+            <textarea name="phm" placeholder="Escribe tu mensaje..." name="smg" required></textarea>
+            <button type="submit" class="btn-chat">Enviar</button>
+            <button type="button" id="cerrar-chat"
+            class="btn-chat cancel">Cerrar Ventana</button>
+        </form>
+    </div>
+  </div>
   <!-- inicio COPY -->
   <div class="contenedor-copy">
       <div class="copy">
@@ -484,11 +490,12 @@
 <!-- <script src="./codigo.js"></script>  -->
 <script src="./codigo.js/loguinybanner.js"></script> 
 <script src="./codigo.js/reservasyformulario.js"></script> 
-<script scr="./modalreserva.js"></script>
+<script src="./codigo.js/modalreserva.js"></script> 
 <script src="./codigo.js/apifotos.js"></script> 
 <script src="./codigo.js/testimonios.js"></script> 
 <script src="./codigo.js/carrito.js"></script> 
 <script src="./codigo.js/masservicios.js"></script>
+<script src="./codigo.js/chat.js"></script> 
 
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

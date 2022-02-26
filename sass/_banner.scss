@@ -64,3 +64,25 @@ button:hover {
     border: 1px solid white;
     margin: 2em;
 }
+
+
+// responsive
+
+
+@media (max-width:768px){
+    .contenedor{
+        flex-direction: column;
+    }
+    
+}
+
+
+ @media (max-width:415px){
+    
+    
+ }
+ 
+@media (max-width:376px){
+    
+}
+ 

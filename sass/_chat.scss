@@ -1,0 +1,79 @@
+.open-boton{
+    font-family: 'Amatic SC', cursive;
+    font-size: 1em;
+    background-color: $color-naranja;
+    color: white;
+    padding: 10px 12px;
+    letter-spacing: 0.2em;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 3em;
+    right: 3em;
+    border-radius: 20px;
+  
+}
+
+.chat-popup{
+    display: none;
+    position: fixed;
+    bottom: 0px;
+    right: 15px;
+    z-index: 9;
+}
+
+.mensaje-chat {
+    font-family: 'Amatic SC', cursive;
+    font-size: 0.8em;
+    padding: 0;
+}
+
+.form-chat-contenedor{
+    max-width: 250px;
+    padding: 10px;
+    background-color: $color-rosa;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.form-chat-contenedor textarea{
+    width: 100%;
+    font-size: 0.8em;
+    padding: 12px;
+    margin: 5px 0 12px 0;
+    border: none;
+    background: #f5e0e0;
+    resize: none;
+    min-height: 100px;
+    border-radius: 5px;    
+    margin: 0;
+    outline: none;
+}
+
+.phm {
+    font-family: 'Amatic SC', cursive;
+}
+
+.form-chat-contenedor .btn-chat{
+    font-family: 'Amatic SC', cursive;
+    background-color: $color-rosa;
+    color: white;
+    padding: 8px 10px;
+    border:none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+    border-radius: 20px;
+}
+
+.form-chat-contenedor .btn-chat{
+    background-color: $color-verde;
+    font-size: 0.8em;
+}
+
+.form-chat-contenedor, .btn-chat:hover {
+    opacity: 1;
+}

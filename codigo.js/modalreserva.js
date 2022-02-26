@@ -1,19 +1,6 @@
+let cierreVentana = document.querySelector ('#cerrar-ventana');
+let ventanaContenido = document.querySelector ('#modal-formulario');
 
-let verPresupuesto = document.querySelector('#presupuesto');
-let modalVentana = document.querySelector('#modal-formulario');
-let cerrarVentanaModal = document.querySelector ('#cerrar-form');
-
-
-let showModal = e => {
-  e.stopPropagation();
-  modalVentana.classList.toggle('d-none');
-};
-
-verPresupuesto.addEventListener('click', e => {
-  showModal(e);
+cierreVentana.addEventListener ('click', e => {
+  ventanaContenido.style.display = "none";
 });
-
-cerrarVentanaModal.addEventListener ('click', e => {
-  showModal(e);
-})
-

@@ -55,7 +55,7 @@ ul {
 }
 
 .footer-col ul li a:hover{
-    color: $color-verde;
+    color: $color-naranjafondo;
     padding-left: 0.6em;
 }
 
@@ -74,7 +74,7 @@ ul {
 }
 
 .footer-col .links-redes a:hover{
-    color: $color-verde;
+    color: $color-naranjafondo;
 }
 
 .contenedor-copy{
@@ -97,7 +97,7 @@ p.copy-parrafo {
 }
 
 .menu-footer a:hover{
-    color: $color-celeste
+    color: $color-naranjafondo
 } 
 
 .copy-links{
@@ -107,5 +107,21 @@ p.copy-parrafo {
         font-size: 1.2em;
         color: rgb(0, 0, 0);
         margin: 0 0.5em;
+    }
+}
+
+// responsive
+
+@media (max-width:768px){
+    .footer-col{
+        font-size: 0.8em;
+    }
+    .footer-col{
+        width: auto;
+    }
+
+    .copy{
+        margin: 0;
+        font-size: 0.6em;
     }
 }

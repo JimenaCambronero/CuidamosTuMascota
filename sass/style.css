@@ -217,6 +217,15 @@ button:hover {
   margin: 2em;
 }
 
+@media (max-width: 768px) {
+  .contenedor {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .contenedor-sobreNosotros {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -412,7 +421,7 @@ button:hover {
 }
 
 .contenedor-servicios {
-  padding: 5em 5em 10em;
+  padding: 5em;
   -webkit-animation-delay: 2.5s;
           animation-delay: 2.5s;
   -webkit-animation-duration: 4s;
@@ -448,9 +457,13 @@ button:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   font-size: 1.5em;
   margin: 3em 3em 0;
 }
@@ -459,34 +472,68 @@ button:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   font-size: 1.5em;
+  padding: 0.75em;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
 .descripcion {
-  font-family: 'Roboto', sans-serif;
-  font-size: 0.5em;
+  font-family: 'Amatic SC', cursive;
+  font-size: 0.8em;
   letter-spacing: 0.1em;
-  margin: 1em;
+  padding: 1em 1.5em;
+  margin: 0;
 }
 
 .boton-saber {
-  border-radius: 23px;
+  border-radius: 15px;
   font-size: 0.5em;
   padding: 0.5em 2em;
-  background-color: #f2e1af;
+  background-color: #e7b69d;
+  border: none;
+}
+
+.boton-saber:hover {
+  background-color: #a4ac94;
 }
 
 .contenido-saber {
+  font-family: 'Amatic SC', cursive;
   font-size: 0.5em;
   letter-spacing: 0.1em;
-  margin-top: 0.8em;
+  margin: 0;
+  padding-left: 1.5em;
+}
+
+@media (max-width: 768px) {
+  .servicios {
+    margin: 1em 1em 0;
+  }
+  .descripcion {
+    font-size: 0.5em;
+  }
+  .boton-saber {
+    font-size: 0.4em;
+    padding: 0.5em 2em;
+  }
+}
+
+@media (max-width: 414px) {
+  .servicio {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .d-none {
@@ -710,10 +757,6 @@ button:hover {
   background-color: #a4ac94;
 }
 
-.d-none {
-  display: none;
-}
-
 .modal-formulario {
   background-color: rgba(0, 0, 0, 0.719);
   position: fixed;
@@ -722,6 +765,8 @@ button:hover {
   bottom: 0;
   left: 0;
   z-index: 4;
+  display: none;
+  padding: 2em;
 }
 
 .contenedor-formulario {
@@ -748,35 +793,52 @@ button:hover {
       justify-content: space-around;
   -webkit-transition: all .5s ease-out;
   transition: all .5s ease-out;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .cerrar-form {
   padding: 10px;
 }
 
-.mensaje h2 {
+.mensaje-titulo h2 {
   font-size: 1.7rem;
   padding: 1rem 0;
 }
 
-.mensaje {
-  padding: 1rem;
+.mensaje-contenedor {
+  padding: 2rem;
+}
+
+.mensaje-reserva {
+  font-size: 1em;
+  padding: 0.5em;
+  margin: 0;
 }
 
 .boton-mensaje {
-  padding: 1rem;
-  font-size: 1em;
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
   font-weight: 400;
-  letter-spacing: 0.5em;
-  background-color: #00bb2d;
-  border-radius: 2rem;
-  border: none;
-  outline: none;
   cursor: pointer;
-  margin-top: 2rem;
-  -webkit-transition: all .3s ease-in;
-  transition: all .3s ease-in;
-  color: white;
+  color: #00bb2d;
+}
+
+.boton-mensaje:hover {
+  color: #c68c64;
+}
+
+.fa-whatsapp {
+  padding: 0.5em;
+}
+
+@media (max-width: 768px) {
+  .formulario-presupuesto {
+    padding: 1em;
+  }
 }
 
 .tienda-chiches {
@@ -825,7 +887,7 @@ button:hover {
 
 .carrito-titulo {
   font-family: 'Amatic SC', cursive;
-  font-size: 1.5em;
+  font-size: 2.5em;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   padding: 2em 0 1em;
@@ -846,6 +908,98 @@ button:hover {
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .tienda-chiches {
+    padding: 5em 5em 0 5em;
+  }
+  .card-title {
+    font-size: 0.7em;
+  }
+  .table {
+    width: 90%;
+  }
+}
+
+.open-boton {
+  font-family: 'Amatic SC', cursive;
+  font-size: 1em;
+  background-color: #c68c64;
+  color: white;
+  padding: 10px 12px;
+  letter-spacing: 0.2em;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 3em;
+  right: 3em;
+  border-radius: 20px;
+}
+
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 0px;
+  right: 15px;
+  z-index: 9;
+}
+
+.mensaje-chat {
+  font-family: 'Amatic SC', cursive;
+  font-size: 0.8em;
+  padding: 0;
+}
+
+.form-chat-contenedor {
+  max-width: 250px;
+  padding: 10px;
+  background-color: #dca3ab;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.form-chat-contenedor textarea {
+  width: 100%;
+  font-size: 0.8em;
+  padding: 12px;
+  margin: 5px 0 12px 0;
+  border: none;
+  background: #f5e0e0;
+  resize: none;
+  min-height: 100px;
+  border-radius: 5px;
+  margin: 0;
+  outline: none;
+}
+
+.phm {
+  font-family: 'Amatic SC', cursive;
+}
+
+.form-chat-contenedor .btn-chat {
+  font-family: 'Amatic SC', cursive;
+  background-color: #dca3ab;
+  color: white;
+  padding: 8px 10px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+  opacity: 0.8;
+  border-radius: 20px;
+}
+
+.form-chat-contenedor .btn-chat {
+  background-color: #a4ac94;
+  font-size: 0.8em;
+}
+
+.form-chat-contenedor, .btn-chat:hover {
+  opacity: 1;
 }
 
 /* -------------------------------Estilo FOTTER---------------------------- */
@@ -910,7 +1064,7 @@ ul {
 }
 
 .footer-col ul li a:hover {
-  color: #a4ac94;
+  color: #ecd9cf;
   padding-left: 0.6em;
 }
 
@@ -937,7 +1091,7 @@ ul {
 }
 
 .footer-col .links-redes a:hover {
-  color: #a4ac94;
+  color: #ecd9cf;
 }
 
 .contenedor-copy {
@@ -964,7 +1118,7 @@ p.copy-parrafo {
 }
 
 .menu-footer a:hover {
-  color: #b5d7dc;
+  color: #ecd9cf;
 }
 
 .copy-links {
@@ -980,5 +1134,18 @@ p.copy-parrafo {
   font-size: 1.2em;
   color: black;
   margin: 0 0.5em;
+}
+
+@media (max-width: 768px) {
+  .footer-col {
+    font-size: 0.8em;
+  }
+  .footer-col {
+    width: auto;
+  }
+  .copy {
+    margin: 0;
+    font-size: 0.6em;
+  }
 }
 /*# sourceMappingURL=style.css.map */

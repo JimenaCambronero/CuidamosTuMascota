@@ -13,6 +13,10 @@ $('#masMacotas').append("¡Si tienes algun otro tipo de mascota, recordá que po
 
 // Formulario
 
+aperturaModal = document.querySelector ('#modal-formulario')
+
+
+
 $('#presupuesto').click(function (e) { 
     e.preventDefault();
 
@@ -46,15 +50,22 @@ $('#presupuesto').click(function (e) {
           console.log (JSON.parse (localStorage.getItem('datosFormulario')));
             if (localStorage.getItem ('datosFormulario')){
             let {nombre, apellido, email, cantidadMascotas, perros, gatos, fechaInicio, totalDias, presupuesto} = JSON.parse(localStorage.getItem('datosFormulario'))
-            }
+            }          
         }
-  
+        aperturaModal.style.display = "block";
+
         for (let i = 0; i < localStorage.length; i++){
           let datosFormulario = localStorage.key(i);
-          const mensaje = `Hola! Podes revisar tus datos y enviarnos el siguiente mensaje por whatsApp: Mi nombre es ${nombreDueño} ${apellidoDueño} mi email ${emailDueño} quisiera saber disponibilidad para el cuidado de mi/s ${cantidadMascotas} mascota/s (${cantidadPerros} perro/s ${cantidadGatos} gato/s) a partir del ${fecha} por un total de ${totalDias} dias, por el servicio se me ha cotizado un presupuestado total de ${resultadoPresupuesto} euros, quisiera seguir con la reserva.`;
-          // alert(mensaje)
-    }
   
+    }
+    let textoModalReserva = document.createElement ('p')
+    textoModalReserva.setAttribute('class', 'mensaje-reserva')
+   
+    textoModalReserva = `Hola! Podes revisar tus datos y luego comunicarte por WhatsApp para que realicemos la reserva, copia y pega este mensaje: Mi nombre es ${nombreDueño} ${apellidoDueño} mi email es ${emailDueño} quisiera saber disponibilidad para el cuidado de mi/s ${cantidadMascotas} mascota/s (${cantidadPerros} perro/s ${cantidadGatos} gato/s) a partir del ${fecha} por un total de ${totalDias} dias, por el servicio se me ha cotizado un presupuestado total de ${resultadoPresupuesto} euros, quisiera seguir con la reserva.`;
+    
+    let mensajeContenedor = document.getElementById ('mensaje-contenedor');
+    mensajeContenedor.append(textoModalReserva);
+    
     } else{
     alert ("Recuerda completar todos los campos. Solo podemos cuidar hasta dos mascotas, lo sentimos");
   }  

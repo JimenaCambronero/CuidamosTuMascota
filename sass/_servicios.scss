@@ -1,5 +1,5 @@
 .contenedor-servicios{
-    padding: 5em 5em 10em;
+    padding: 5em;
     animation-delay: 2.5s;
     animation-duration: 4s;
     background-color: $color-rosafondo;
@@ -29,34 +29,69 @@
 
 .servicios{
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: flex-start;
     font-size: 1.5em;
     margin: 3em 3em 0;
 }
 
 .servicio{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: flex-start;
     font-size: 1.5em;
+    padding: 0.75em;
     align-items: center;
 }
 
 .descripcion{
-    font-family: 'Roboto', sans-serif;
-    font-size: 0.5em;
+    font-family: 'Amatic SC', cursive;
+    font-size: 0.8em;
     letter-spacing: 0.1em;
-    margin: 1em;
+    padding: 1em 1.5em;
+    margin: 0;
 }
 
 .boton-saber{
-    border-radius: 23px;
+    border-radius: 15px;
     font-size: 0.5em;
     padding: 0.5em 2em;
-    background-color: $color-amarillo;
+    background-color: $color-naranjalight;
+    border:none;
 }
 
+.boton-saber:hover{
+    background-color: $color-verde;
+    
+}
 .contenido-saber{
+    font-family: 'Amatic SC', cursive;
     font-size: 0.5em;
     letter-spacing: 0.1em;
-    margin-top: 0.8em;     
+    margin: 0;   
+    padding-left: 1.5em;
+}
+
+
+// responsive
+
+@media (max-width:768px){
+    .servicios{
+        margin: 1em 1em 0;
+    }
+
+    .descripcion{
+        font-size: 0.5em;
+    }
+    
+    .boton-saber{
+        font-size: 0.4em;
+        padding: 0.5em 2em;
+    }
+}
+
+@media (max-width:414px) {
+    .servicio{
+        flex-direction: column;
+    }
 }

@@ -42,9 +42,6 @@
 
 
 // estilos ventana presupuesto
-.d-none {
-    display: none;
-}
 
 .modal-formulario {
     background-color: rgba(0, 0, 0, 0.719);
@@ -54,6 +51,8 @@
     bottom: 0;
     left: 0;
     z-index: 4;
+    display: none;
+    padding: 2em;
 }
 
 
@@ -71,33 +70,49 @@
     display: flex;
     justify-content: space-around;
     transition: all .5s ease-out;
+    display: flex;
+    flex-direction: column;
 }
 
 .cerrar-form {
     padding: 10px;
 }
 
-.mensaje h2 {
+.mensaje-titulo h2 {
     font-size: 1.7rem;
     padding: 1rem 0;
 }
 
-.mensaje {
-    padding: 1rem;
+.mensaje-contenedor {
+    padding: 2rem;
+}
+
+.mensaje-reserva{
+    font-size: 1em;
+    padding: 0.5em;
+    margin: 0;
 }
 
 .boton-mensaje{
-    padding: 1rem;
-    font-size: 1em;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
     font-weight: 400;
-    letter-spacing: 0.5em;
-    background-color: #00bb2d ;
-    border-radius: 2rem;
-    border: none;
-    outline: none;
     cursor: pointer;
-    margin-top: 2rem;
-    transition: all .3s ease-in;
-    color: rgb(255, 255, 255);
+    color: #00bb2d;
+    
 }
 
+.boton-mensaje:hover{
+    color: $color-naranja;
+}
+
+.fa-whatsapp{
+    padding: 0.5em;
+}
+// responsive
+
+@media (max-width:768px){
+    .formulario-presupuesto{
+        padding: 1em;
+    }
+}
